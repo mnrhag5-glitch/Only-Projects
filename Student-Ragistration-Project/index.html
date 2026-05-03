@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration System</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-    <header>
-        <h2>Student Registration System</h2>
-        
-    </header>
-    <form class="form">
-        <input type="name" class="name" placeholder="Student-Name">
-        <input type="Student id" class="student id" placeholder="Student-id">
-        <input type="email" class="email" placeholder="Enter Email-Id">
-        <input type="number" class="number" placeholder="Phone Number">
-    </form>
-    <button class="button">submit</button>
-<table class="table">
-    <td>
-        <th>Name</th>
-        <th>Student-ID</th>
-        <th>Email</th>
-        <th>Phone Number</th>
-    </td>
+
+<h2>Student Registration System</h2>
+
+<form class="form">
+  <input type="text" class="name" placeholder="Name">
+  <input type="number" class="studentId" placeholder="ID">
+  <input type="email" class="email" placeholder="Email">
+  <input type="number" class="phone" placeholder="Phone">
+  <button type="submit">Add</button>
+</form>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>ID</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody class="tablebody"></tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-    <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
