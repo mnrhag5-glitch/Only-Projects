@@ -191,15 +191,86 @@
 
 
 
-let btn = document.createElement("button")
-let para = document.createElement("p")
-btn.innerText = "Hide"
-para.innerText = "Hello Gautam"
+// let btn = document.createElement("button")
+// let para = document.createElement("p")
+// btn.innerText = "Hide"
+// para.innerText = "Hello Gautam"
 
-document.body.appendChild(btn)
-document.body.appendChild(para)
+// document.body.appendChild(btn)
+// document.body.appendChild(para)
 
-btn.addEventListener("click",()=>{
-    para.remove();
-})
+// btn.addEventListener("click",()=>{
+//     para.remove();
+// })
+
+
+// let btn = document.createElement("button");
+// btn.innerText = "Toggle Theme";
+
+// document.body.appendChild(btn);
+
+// let dark = false;
+
+// btn.addEventListener("click", ()=>{
+
+//     if(dark){
+//         document.body.style.backgroundColor = "white";
+//         document.body.style.color = "black";
+//         dark = false;
+//     }else{
+//         document.body.style.backgroundColor = "black";
+//         document.body.style.color = "white";
+//         dark = true;
+//     }
+
+// });
+
+
+
+// let btn = document.createElement("button")
+// let h1 = document.createElement("h1")
+
+// btn.innerText = "Toggle Color";
+// h1.innerText = "Hello Gautam"
+
+// document.body.appendChild(btn)
+// document.body.appendChild(h1)
+//  let isRed = true;
+// btn.addEventListener("click",()=>{
+   
+//     if(isRed){
+//         h1.style.color = "red"
+//         isRed = false
+//     }else{
+//         h1.style.color = "blue"
+//         isRed = true
+//     }
+// })
+
+
+// let btn = document.createElement("button")
+// let h1 = document.createElement("h1")
+
+// btn.innerText = "Toggle Color";
+// h1.innerText = "Hello Gautam"
+
+// document.body.appendChild(btn)
+// document.body.appendChild(h1)
+//  let isRed = true;
+
+//  btn.addEventListener("click",()=>{
+// setInterval(() => {
+    
+
+   
+//     if(isRed){
+//         h1.style.color = "red"
+//         isRed = false
+//     }else{
+//         h1.style.color = "blue"
+//         isRed = true
+//     }
+// },1000)})
+
+
 
