@@ -161,31 +161,45 @@
 
 
 
-let form = document.createElement("form")
-let input = document.createElement("input")
-let button = document.createElement("button")
-let ul = document.createElement("ul")
-let li = document.createElement("li")
+// let form = document.createElement("form")
+// let input = document.createElement("input")
+// let button = document.createElement("button")
+// let ul = document.createElement("ul")
+// let li = document.createElement("li")
 
-button.innerText = "Add";
+// button.innerText = "Add";
 
-form.appendChild(input)
-form.appendChild(button)
-form.appendChild(ul) 
+// form.appendChild(input)
+// form.appendChild(button)
+// form.appendChild(ul) 
 
 
-document.body.appendChild(form)
-document.body.appendChild(ul)
+// document.body.appendChild(form)
+// document.body.appendChild(ul)
 
-form.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    let li = document.createElement("li")
-    ul.appendChild(li)
+// form.addEventListener("submit",(e)=>{
+//     e.preventDefault();
+//     let li = document.createElement("li")
+//     ul.appendChild(li)
 
  
-    li.innerText = input.value;
-    input.value = "";
+//     li.innerText = input.value;
+//     input.value = "";
 
+// })
+
+
+
+
+let btn = document.createElement("button")
+let para = document.createElement("p")
+btn.innerText = "Hide"
+para.innerText = "Hello Gautam"
+
+document.body.appendChild(btn)
+document.body.appendChild(para)
+
+btn.addEventListener("click",()=>{
+    para.remove();
 })
-
 
