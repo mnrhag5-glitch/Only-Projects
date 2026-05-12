@@ -63,42 +63,76 @@
 
 //---------question 4
 
-let button = document.createElement("button");
-button.innerText = "Get Data"
-document.body.appendChild(button);
+// let button = document.createElement("button");
+// button.innerText = "Get Data"
+// document.body.appendChild(button);
 
 
-button.addEventListener("click",()=>{
-    async function zoro(){
-        let res = await fetch("https://jsonplaceholder.typicode.com/comments");
-        let data = await res.json();
-        console.log(data);
-    }
-    zoro();
-})
+// button.addEventListener("click",()=>{
+//     async function zoro(){
+//         let res = await fetch("https://jsonplaceholder.typicode.com/comments");
+//         let data = await res.json();
+//         console.log(data);
+//     }
+//     zoro();
+// })
 
 
 //--------question 5
 
 
-let input = document.createElement("input");
+// let input = document.createElement("input");
 
-let button2 = document.createElement("button");
-button2.innerText = "click"
-document.body.appendChild(input)
-document.body.appendChild(button2);
+// let button2 = document.createElement("button");
+// button2.innerText = "click"
+// document.body.appendChild(input)
+// document.body.appendChild(button2);
 
 
-button2.addEventListener("click",()=>{
-    async function uii(){
-        let res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
-        let data = await res.json();
-        console.log(data);
+// button2.addEventListener("click",()=>{
+//     async function uii(){
+//         let res = await fetch(`https://jsonplaceholder.typicode.com/users/${input.value}`);
+//         let data = await res.json();
+//         console.log(data.name);
 
-        let usernames = data;
-        if(name.usernames==username){
-            input.innerText=input.value
-        }
-    }
-    uii();
+        
+//     }
+//     uii();
+// })
+
+
+
+////==============multiple data show krna======================
+////==============multiple data show krna======================
+////==============multiple data show krna======================
+////==============multiple data show krna======================
+////==============multiple data show krna======================
+
+
+async function hello(){
+
+let res = await fetch("https://jsonplaceholder.typicode.com/users");
+let data = await res.json();
+console.log(data);
+
+data.forEach((user)=>{
+let div = document.createElement("div")
+let h2 = document.createElement("h2")
+let p = document.createElement("p")
+
+div.appendChild(h2)
+div.appendChild(p)
+
+document.body.appendChild(div)
+
+h2.innerText = user.name;
+p.innerText = user.email;  
+
+
 })
+
+
+
+}
+
+hello()
