@@ -109,30 +109,34 @@
 ////==============multiple data show krna======================
 
 
-async function hello(){
+// async function hello(){
 
-let res = await fetch("https://jsonplaceholder.typicode.com/users");
-let data = await res.json();
-console.log(data);
+// let res = await fetch("https://jsonplaceholder.typicode.com/users");
+// let data = await res.json();
+// console.log(data);
 
-data.forEach((user)=>{
-let div = document.createElement("div")
-let h2 = document.createElement("h2")
-let p = document.createElement("p")
+// data.forEach((user)=>{
+// let div = document.createElement("div")
+// let h2 = document.createElement("h2")
+// let p = document.createElement("p")
 
-div.appendChild(h2)
-div.appendChild(p)
+// div.appendChild(h2)
+// div.appendChild(p)
 
-document.body.appendChild(div)
+// document.body.appendChild(div)
 
-h2.innerText = user.name;
-p.innerText = user.email;  
-
-
-})
+// h2.innerText = user.name;
+// p.innerText = user.email;  
 
 
+// })
 
-}
 
-hello()
+
+// }
+
+// hello();
+
+
+
+
