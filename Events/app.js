@@ -273,7 +273,7 @@
 // },1000)})
 
 
-console.log("enough for today");
+console.log("enough for todaygit");
 
 
 
