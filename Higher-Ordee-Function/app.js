@@ -220,16 +220,125 @@ console.log("Lets start");
 //---------------------qestio ----------------------
 
 
-let students = [
-  { name: "Aman", marks: 45 },
-  { name: "Rohit", marks: 75 },
-  { name: "Gautam", marks: 32 },
-  { name: "Shyam", marks: 88 },
-  { name: "Ram", marks: 55 }
+// let students = [
+//   { name: "Aman", marks: 45 },
+//   { name: "Rohit", marks: 75 },
+//   { name: "Gautam", marks: 32 },
+//   { name: "Shyam", marks: 88 },
+//   { name: "Ram", marks: 55 }
+// ];
+
+// let res = students.filter((uii)=>{
+//     return uii.marks >= 50 && uii.name.length >= 4
+// });
+
+// console.log(res)
+
+
+
+//----------------question---------------------------
+
+// let products = [
+//   { name: "Laptop", price: 55000 },
+//   { name: "Phone", price: 20000 },
+//   { name: "Tablet", price: 15000 },
+//   { name: "Watch", price: 5000 },
+//   { name: "Camera", price: 300000 }
+// ];
+
+// let res = products.filter((uii)=>{
+//     return uii.price < 50000 ;  
+// })
+  
+
+// console.log(res)
+
+// let res2  = res.map((oii)=>{
+//     return oii.name
+// })
+// console.log(res2)
+
+
+
+//---//-------------------second way---------------------------------
+// let res = products
+//   .filter(p => p.price < 50000)
+//   .map(p => {
+//       return {
+//           name: p.name,
+//           price: p.price
+//       }
+//   });
+
+// console.log(res);
+
+
+
+
+
+
+
+
+
+
+//==========================reduce method-----------------------------
+//==========================reduce method-----------------------------
+//==========================reduce method-----------------------------
+//==========================reduce method-----------------------------
+//==========================reduce method-----------------------------
+
+
+//-------------------question-------------------------
+
+// let nums = [5,10,15,20];
+// let res = nums.reduce((a,b)=>{
+//   return a+b;
+// })
+// console.log(res)
+
+
+
+//-----------------question--------------------------------
+
+
+// let nums = [12, 5, 8, 20, 1];
+// let res = nums.reduce((a,b)=>{
+//   return a > b ? a : b
+// })
+// console.log(res)
+
+
+//----------------------question-------------------------------
+
+// let fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
+//  let count = fruits.reduce((a,b)=>{
+//    if(a[b]){
+//     a[b] = a[b]+1
+//    }else{
+//     a[b] = 1
+//    }
+  
+//   return a;
+//  })
+
+//  console.log(count)
+
+
+
+
+ //----------------------question-------------------------------
+
+ let users = [
+  { name: "Aman", age: 21 },
+  { name: "Rohit", age: 18 },
+  { name: "Shyam", age: 25 },
+  { name: "Ram", age: 17 }
 ];
 
-let res = students.filter((uii)=>{
-    return uii.marks >= 50 && uii.name.length >= 4
-});
+let res = users.reduce((a,b)=>{
+ if(b.age >=18){
+return a+1}else{
+return a;}
+},0)
 
 console.log(res)
