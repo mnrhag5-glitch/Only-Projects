@@ -328,17 +328,87 @@ console.log("Lets start");
 
  //----------------------question-------------------------------
 
- let users = [
-  { name: "Aman", age: 21 },
-  { name: "Rohit", age: 18 },
-  { name: "Shyam", age: 25 },
-  { name: "Ram", age: 17 }
-];
+//  let users = [
+//   { name: "Aman", age: 21 },
+//   { name: "Rohit", age: 18 },
+//   { name: "Shyam", age: 25 },
+//   { name: "Ram", age: 17 }
+// ];
 
-let res = users.reduce((a,b)=>{
- if(b.age >=18){
-return a+1}else{
-return a;}
-},0)
+// let res = users.reduce((a,b)=>{
+//  if(b.age >=18){
+// return a+1}else{
+// return a;}
+// },0)
 
-console.log(res)
+// console.log(res)
+
+//--------------------question------------------------------------
+
+
+//---arr me even num nikalo or unko plus kro
+//---arr me even num nikalo or unko plus kro
+//---arr me even num nikalo or unko plus kro
+//---arr me even num nikalo or unko plus kro
+//---arr me even num nikalo or unko plus kro
+//---arr me even num nikalo or unko plus kro
+
+
+// let nums = [1,2,3,4,5,6];
+
+// let sum = nums.reduce((a,b)=>{
+//     if(b%2!==0){
+//       return a+b;
+ 
+//     }else{
+//       return a
+//     }
+// },0)
+// console.log(sum)
+
+
+//------------------question------------------------------------------
+
+
+//--arr me nums ka avg niklao-------------------
+//--arr me nums ka avg niklao-------------------
+//--arr me nums ka avg niklao-------------------
+//--arr me nums ka avg niklao-------------------
+//--arr me nums ka avg niklao-------------------
+//--arr me nums ka avg niklao-------------------
+
+
+// let nums = [5, 10, 15, 20];
+
+// let sum = nums.reduce((a,b)=>{
+//   return a+b;
+// })
+ 
+
+//  let avg =  sum/nums.length
+
+// console.log(avg)
+
+
+
+
+//-----============question------------------------
+
+
+// let nums = [1,2,3,4];
+
+// let res = nums.reduce((a,b)=>{
+
+//    a.sum = a.sum + b;
+//    a.multiply = a.multiply * b;
+
+//    return a;
+
+// },{
+//    sum:0,
+//    multiply:1
+// })
+
+// console.log(res)
+
+
