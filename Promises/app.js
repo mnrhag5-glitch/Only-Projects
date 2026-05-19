@@ -258,25 +258,3 @@
 //     console.log(data);
     
 // })
-
-function task(message, time){
-
-    return new Promise((res) => {
-
-        setTimeout(() => {
-            res(message);
-        }, time);
-
-    });
-
-}
-
-Promise.all([
-    task("Login", 2000),
-    task("Fetch Profile", 3000),
-    task("Dashboard", 1000)
-])
-
-.then((data) => {
-    console.log(data);
-});
