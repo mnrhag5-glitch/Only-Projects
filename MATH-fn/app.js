@@ -70,10 +70,12 @@ console.log(a.toFixed(2));
 //----tofixed  point ke baad ke sirf do digit lega agr 3 likhoge to teen lega
 
 
-let arr = [1,2,3,4,5]
-let sum = arr.reduce((a,b)=>{
-    return a+b
-})
+// let arr = [1,2,3,4,5]
+// let sum = arr.reduce((a,b)=>{
+//     return a+b
+// })
 
-let avg = sum/2
-console.log(avg);
+// let avg = sum/2
+// console.log(avg);
+
+
