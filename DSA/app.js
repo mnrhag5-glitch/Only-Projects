@@ -137,3 +137,68 @@
 // console.log(z);
 
 
+
+// let amount = Number(prompt("enter the amount"))
+// let discount = 0;
+// if(amount>=5000 && amount<7000){
+//     discount = 5
+// }else if(
+//     amount>=7000 && amount<9000
+// ){
+//     discount = 10
+// }else if(
+//     amount>=9000
+// ){
+//     discount = 15
+// }else{
+//     console.log("not in discout catagory");
+    
+// }
+// console.log('Your Discount Amount Is = ',amount-amount*discount/100);
+
+
+
+// let amount = 5000;
+// if(amount>=500){
+//     console.log("Note of 500" ,Math.floor(amount/500));
+//    amount = amount%500
+    
+// }if(amount>=200){
+//     console.log("Note of 200" ,Math.floor(amount/200));
+//    amount = amount%200
+    
+// }if(amount>=100){
+//     console.log("Note of 100" ,Math.floor(amount/100));
+//    amount = amount%100
+    
+// }if(amount>=50){
+//     console.log("Note of 50" ,Math.floor(amount/50));
+//    amount = amount%50
+    
+// }if(amount>=20){
+//     console.log("Note of 20" ,Math.floor(amount/20));
+//    amount = amount%20
+    
+// }if(amount>=10){
+//     console.log("Note of 10" ,Math.floor(amount/10));
+//    amount = amount%10
+    
+// }if(amount>=5){
+//     console.log("Note of 5" ,Math.floor(amount/5));
+//    amount = amount%5
+    
+// }if(amount>=2){
+//     console.log("Note of 2" ,Math.floor(amount/2));
+//    amount = amount%2
+    
+// }if(amount>=1){
+//     console.log("Note of 1" ,Math.floor(amount/1));
+//    amount = amount%1
+    
+// }
+// console.log(amount);
+
+
+12>13 ? console.log("hehehhe") : console.log("uhuhuhuhuhuh");
+
+console.log(12>11 ? "uiuiuiuiu":"oioiioioioioio");
