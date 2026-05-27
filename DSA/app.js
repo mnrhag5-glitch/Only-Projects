@@ -199,6 +199,8 @@
 // console.log(amount);
 
 
-12>13 ? console.log("hehehhe") : console.log("uhuhuhuhuhuh");
+// 12>13 ? console.log("hehehhe") : console.log("uhuhuhuhuhuh");
 
-console.log(12>11 ? "uiuiuiuiu":"oioiioioioioio");
+// console.log(12>11 ? "uiuiuiuiu":"oioiioioioioio");
+
+
