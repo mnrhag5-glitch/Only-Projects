@@ -1,3 +1,15 @@
+let prompt = require('prompt-sync')();
+
+
+//partern programing 238************************
+//partern programing 238************************
+//partern programing 238************************
+//partern programing 238************************
+
+
+
+
+
 //here is list ki hm kya start krnge or kis line se---------------
 
 //-----besics----------------->=== 7 line;
@@ -204,3 +216,279 @@
 // console.log(12>11 ? "uiuiuiuiu":"oioiioioioioio");
 
 
+// let a = 20;
+// let b = 30;
+//  function swap(a,b){
+//     [a,b] = [b,a]
+//     return[a,b]
+//  }
+//  console.log(swap(a,b));
+ 
+
+// process.stdout.write("hello ")
+// process.stdout.write("seju")
+
+
+
+
+// let a = "hello";
+// let b = "seju"
+
+//helloseju
+
+// process.stdout.write(a+b)
+
+// console.log(a+b);
+
+
+//--------------------------pattern programing-----------------------------
+//--------------------------pattern programing-----------------------------
+//--------------------------pattern programing-----------------------------
+//--------------------------pattern programing-----------------------------
+//--------------------------pattern programing-----------------------------
+//--------------------------pattern programing-----------------------------
+
+// let n = Number(prompt("enter the Number"))
+
+// for(i=0; i<=n; i++){
+//     for(a=1; a<=n; a++){
+// process.stdout.write("* ")}
+
+// console.log();
+
+// }
+
+
+
+
+//-----------------------second pattern left-side-triangle------------------------
+//-----------------------second pattern left-side-triangle------------------------
+//-----------------------second pattern left-side-triangle------------------------
+
+
+
+// let n = Number(prompt("enter the Number"))
+
+// for(i=0; i<=n; i++){
+//     for(a=1; a<=i; a++){
+// process.stdout.write("* ")}
+
+// console.log();
+
+// }
+
+
+
+//-----------again ---------------------------
+//-----------again ---------------------------
+//-----------again ---------------------------
+
+
+// let n = Number(prompt("enter the number"))
+
+// for(i=0; i<=n; i++){
+//     for(a=1; a<=i;a++){
+//         process.stdout.write("* ")
+//     }
+//     console.log();
+    
+// }
+
+
+//-----------------number wala pettern------------------------------
+//-----------------number wala pettern------------------------------
+//-----------------number wala pettern------------------------------
+//-----------------number wala pettern------------------------------
+//-----------------number wala pettern------------------------------
+
+
+
+
+//  let n = Number(prompt("enter the number"))
+//   for(i=0; i<=n; i++){
+//      for(a=1; a<=i;a++){
+//          process.stdout.write(a+" ")
+//      }
+//      console.log();  
+//  }
+
+
+//--------------------alphabet wala-------------------
+//--------------------alphabet wala-------------------
+//--------------------alphabet wala-------------------
+
+
+
+
+//  let n = Number(prompt("enter the number"))
+//   for(i=0; i<=n; i++){
+//   let alphabet = 65;
+
+//      for(a=1; a<=i;a++){
+//          process.stdout.write(String.fromCharCode(alphabet)+" ")
+//          alphabet++
+//      }
+//      console.log();  
+//  }
+
+
+//-----------------you can do like this too-------------------------
+//-----------------you can do like this too-------------------------
+//-----------------you can do like this too-------------------------
+
+// let n = Number(prompt("Enter Number"));
+
+// for(let i = 1; i <= n; i++){
+
+//    for(let j = 0; j < i; j++){
+
+//       process.stdout.write(String.fromCharCode(65 + j) + " ");
+//    }
+
+//    console.log();
+// }
+
+
+
+
+//---------------------------ulta triangle--------------------------
+//---------------------------ulta triangle--------------------------
+//---------------------------ulta triangle--------------------------
+//---------------------------ulta triangle--------------------------
+
+// let n = Number(prompt("enter the number"))
+
+// for(i=0; i<=n; i++){
+//     for(a=1; a<=n-i;a++){
+//         process.stdout.write("* ")
+//     }
+//     console.log();
+    
+// }
+
+
+
+//---------------again new method-------------------------
+//---------------again new method-------------------------
+//---------------again new method-------------------------
+
+
+
+// let n = Number(prompt("enter the number"))
+
+// for(i=1; i<=n; i++){
+//     for(a=n; a>=i;a--){
+//         process.stdout.write("* ")
+//     }
+//     console.log();
+    
+// }
+
+
+
+
+//----------------right side triangle------------------------------
+//----------------right side triangle------------------------------
+//----------------right side triangle------------------------------
+//----------------right side triangle------------------------------
+
+
+
+
+// let n = Number(prompt("enter the number"))
+
+// for(i=1; i<=n; i++){
+//     for(a=1; a<=n-i;a++){
+//         process.stdout.write("  ")
+//     }
+//    for(let a=1;a<=i;a++){
+//     process.stdout.write("* ")
+//    }
+//     console.log();
+    
+// }
+
+
+
+//--------------------triangle------------------------
+//--------------------triangle------------------------
+//--------------------triangle------------------------
+
+// let n = Number(prompt("Enter Number"));
+
+// for(let i = 1; i <= n; i++){
+
+//    // spaces
+//    for(let j = 1; j <= n-i; j++){
+//       process.stdout.write(" ");
+//    }
+
+//    // stars
+//    for(let k = 1; k <= i; k++){
+//       process.stdout.write("* ");
+//    }
+
+//    console.log();
+// }
+
+
+
+//-------------------------shortest way to do this----------------
+//-------------------------shortest way to do this----------------
+//-------------------------shortest way to do this----------------
+
+
+
+// let n = Number(prompt("Enter Number"));
+
+//let n = 5;
+
+// for(let i = 1; i <= n; i++){
+//    console.log(" ".repeat(n-i) + "* ".repeat(i));
+// }
+
+
+
+
+//------------------chat gpt ans and test for interview---------------------------------
+//------------------chat gpt ans and test for interview---------------------------------
+//------------------chat gpt ans and test for interview---------------------------------
+//------------------chat gpt ans and test for interview---------------------------------
+//------------------chat gpt ans and test for interview---------------------------------
+//------------------chat gpt ans and test for interview---------------------------------
+
+
+
+////>>>>>>>>>>>>>>.RIGHT TRIANGLE>>>>>>>>>>>>>>>>>>>>>>>>
+
+// let n = 5;
+// for(let i=0; i<=n; i++){
+//     console.log("*".repeat(i));
+// }
+
+
+
+
+//>>>>>>>>>>>>>>>>>>>>      reverse triangle   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>      reverse triangle   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>      reverse triangle   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>      reverse triangle   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+// let n = 8;
+// for(let i=n; i>=1;i--){
+//     console.log("*".repeat(i));
+    
+// }
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>. pyyramid pattern>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>. pyyramid pattern>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>. pyyramid pattern>>>>>>>>>>>>>>>>>>>>>>>>>
+
+let n = 5;
+ for(let i = 1; i<=n; i++){
+    console.log(" ".repeat(n-i)+"* ".repeat(i));
+    
+ }
