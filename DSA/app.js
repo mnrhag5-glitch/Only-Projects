@@ -487,8 +487,72 @@ let prompt = require('prompt-sync')();
 //>>>>>>>>>>>>>>>>>>>>>>>>. pyyramid pattern>>>>>>>>>>>>>>>>>>>>>>>>>
 //>>>>>>>>>>>>>>>>>>>>>>>>. pyyramid pattern>>>>>>>>>>>>>>>>>>>>>>>>>
 
-let n = 5;
- for(let i = 1; i<=n; i++){
-    console.log(" ".repeat(n-i)+"* ".repeat(i));
+// let n = 5;
+//  for(let i = 1; i<=n; i++){
+//     console.log(" ".repeat(n-i)+"* ".repeat(i));
     
- }
+//  }
+
+
+//=========================number triangle===========================
+//=========================number triangle===========================
+//=========================number triangle===========================
+
+
+// let n = 5;
+
+// for(let i = 1; i <= n; i++){
+
+//    let str = "";
+
+//    for(let j = 1; j <= i; j++){
+
+//       str += j;
+//    }
+
+//    console.log(str);
+// }
+
+
+
+//-------------------------------floyd triangle------------------------
+//-------------------------------floyd triangle------------------------
+//-------------------------------floyd triangle------------------------
+//-------------------------------floyd triangle------------------------
+
+
+// let n = 5;
+
+// let num = 1;
+
+// for(let i = 1; i <= n; i++){
+
+//    let str = "";
+
+//    for(let j = 1; j <= i; j++){
+
+//       str += num + " ";
+//       num++;
+//    }
+
+//    console.log(str);
+// }
+
+//---------------------------------xxxxxxxxxxxxxx bnaye------------
+//---------------------------------xxxxxxxxxxxxxx bnaye------------
+//---------------------------------xxxxxxxxxxxxxx bnaye------------
+//---------------------------------xxxxxxxxxxxxxx bnaye------------
+
+// let n = 5;
+
+// for(let i=1; i<=n; i++){
+
+//    let row = "";
+
+//    for(let j=1; j<=n; j++){
+
+//       row += (i==j || i+j==n+1) ? "* " : "  ";
+//    }
+
+//    console.log(row);
+// }
