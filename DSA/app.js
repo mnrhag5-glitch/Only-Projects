@@ -556,3 +556,37 @@ let prompt = require('prompt-sync')();
 
 //    console.log(row);
 // }
+
+
+//---------------------------vvvvvvvvvvvvvvvvvvvvvvvv------------
+//---------------------------vvvvvvvvvvvvvvvvvvvvvvvv------------
+//---------------------------vvvvvvvvvvvvvvvvvvvvvvvv------------
+//---------------------------vvvvvvvvvvvvvvvvvvvvvvvv------------
+
+
+// let n = 5;
+
+// for(let i = 1; i <= n; i++){
+
+//    console.log( " ".repeat(i-1) + "*".repeat(1) +" ".repeat((n-i)*2) + "*");
+// }
+
+
+// let num = [12,2,5,54,23,43,4,64,65,44,65]
+
+// let max = num[0]
+// for(i=1;i<num.length;i++){
+//     if(max<num[i])
+//         max = num[i]
+    
+// }
+// console.log(max);
+
+
+// let arr = [2,3,4,5,6,7]
+// let min = arr[0]
+// for(i = 1; i<arr.length; i++){
+//     if(min>arr[i])
+//         min = arr[i]
+// }
+// console.log(min);
