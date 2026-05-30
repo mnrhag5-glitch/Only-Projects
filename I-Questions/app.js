@@ -57,6 +57,17 @@
 // console.log(max);
 
 
+//*****************************again chat gpt *************************** */
+//*****************************again chat gpt *************************** */
+
+
+// let arr = [12,23,13,54,34,54,23,15]
+
+// let largest = arr.sort((a,b)=>{return b-a})
+
+// console.log(largest[0]);
+
+
 
 
 // let arr = [2,3,4,5,6,7]
@@ -114,6 +125,18 @@
 // console.log(Smin);
 
 
+//**************************chat gpt ka ans********************************** */
+//**************************chat gpt ka ans********************************** */
+
+
+// let arr = [1,22,13,54,15,6,17];
+
+// arr.sort((a,b) => b-a);
+
+// console.log(arr[1]);
+
+
+
 //********************revervse array  **************************** */
 //********************revervse array  **************************** */
 //********************revervse array  **************************** */
@@ -139,19 +162,19 @@
 //***************move 0 one side and 1 onw side**************************** */
 
 
-let arr = [0,1,6,8,7,1,2,3,0]
+// let arr = [0,1,6,8,7,1,2,3,0]
 
-let i = 0,j=0;
-while(i<arr.length){
-    if(arr[i]==0){
-        let temp = arr[i]
-        arr[i]=arr[j]
-        arr[j]=temp
-        j++
-    }
-    i++
-}
-console.log(arr);
+// let i = 0,j=0;
+// while(i<arr.length){
+//     if(arr[i]==0){
+//         let temp = arr[i]
+//         arr[i]=arr[j]
+//         arr[j]=temp
+//         j++
+//     }
+//     i++
+// }
+// console.log(arr);
 
 
 
@@ -185,3 +208,43 @@ console.log(arr);
 // arr.sort((a, b) => a - b);
 
 // console.log(arr);
+
+
+
+
+//-----------------------output kya ayega -----------------------------------
+
+// let arr = [10,20,30,40,50,60]
+
+// let ans = arr.find((i)=>i>20)
+// console.log(ans);
+   
+
+//----30 bcz find hme sirf agli ek value deta hai or filter agli sari value
+
+//---------------------------------------------------------------------------------
+
+
+// console.log(a,b);
+// var a = 10;                // undifine
+// let b = 100;               // refrence error
+
+
+
+
+//----------------delete something------------------------------------
+
+
+// let obj = {name:"ram",age:25,ismale:true}
+// delete obj.age;
+// console.log(obj);
+
+//----------------------------------------------------------------
+
+
+let obj = {name:"ram",age:22,ismale:true}
+//console.log(Object.keys(obj));
+//console.log(Object.values(obj));
+console.log(Object.entries(obj));
+
+
