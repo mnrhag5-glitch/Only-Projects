@@ -242,9 +242,102 @@
 //----------------------------------------------------------------
 
 
-let obj = {name:"ram",age:22,ismale:true}
+
+
+//----------------------three way to chnage obj into array--------------------------------
+
+
+//let obj = {name:"ram",age:22,ismale:true}
 //console.log(Object.keys(obj));
 //console.log(Object.values(obj));
-console.log(Object.entries(obj));
+//console.log(Object.entries(obj));
 
 
+//---------------------------------------------------------------------
+
+
+
+
+//----------------------left rotation by 1 element-----------------------------------------
+
+
+// let arr = [1,2,3,4,5]
+// let copy = arr[0]
+
+// for(let i = 0; i<arr.length-1;i++){
+//     arr[i] = arr[i+1];
+
+// }
+// arr[arr.length-1] = copy
+// console.log(arr);
+
+
+//--------------------------chat gpt ------------------------------------------------
+
+// let arr = [1,2,3,4,5];
+
+// arr.push(arr.shift());
+
+// console.log(arr);
+
+//***but as a interview purpose upr wala jyada acha hai */
+
+//---------------------------------------------------------------------------------------
+
+
+
+
+//------------------------------right rotaion by 1 element------------------------------------------
+
+
+
+
+// let arr = [1,2,3,4,5]
+// let copy = arr[arr.length-1]
+
+// for(let i = arr.length-1; i>0;i--){
+//     arr[i] = arr[i-1];
+     // loop arr.lenght-1 se chla yaani ki last index se knha tak -> 0 tk or i kr diya 
+     // -- iske baad arr[i] index me arr ki 1 value - kr di phir arr[0] index me last index rkh diya
+// }
+// arr[0] = copy
+// console.log(arr);
+
+
+//-------------------------------chat gpt  --------------------------------------------
+
+// let arr = [1,2,3,4,5];
+
+// arr.unshift(arr.pop());
+
+// console.log(arr);
+
+//----------------------------------------------------------------------------------
+
+
+
+//let arr = [1,2,3];
+
+//console.log(...arr);   //its a spread operator
+
+
+//----------------------------------------------------------------------------------
+
+
+
+
+//-------------------exapmle of spread perameter----------------------------------------
+
+// let arr = [1,2,3,4]
+
+// console.log(...arr);
+
+
+
+//-----------------------exaple of rest perameter---------------------------------
+
+// function hello(...e){
+//      console.log(e);
+     
+// }
+// hello(1,2,3,4,5)
