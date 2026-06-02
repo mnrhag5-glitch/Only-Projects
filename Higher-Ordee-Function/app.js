@@ -308,6 +308,12 @@ console.log("Lets start");
 // console.log(res)
 
 
+// let res = Math.min(...nums);
+
+// console.log(res);
+
+
+
 //----------------------question-------------------------------
 
 // let fruits = ["apple", "banana", "apple", "orange", "banana", "apple"];
@@ -343,6 +349,16 @@ console.log("Lets start");
 
 // console.log(res)
 
+
+
+//--------------------again upr wala-------------------
+
+// let result = users.filter((e)=>{
+//     return e.age>=18
+// }).length
+// console.log(result);
+
+
 //--------------------question------------------------------------
 
 
@@ -365,6 +381,22 @@ console.log("Lets start");
 //     }
 // },0)
 // console.log(sum)
+
+
+//---------------------------again upr waala-----------------------------
+
+
+// let arr = [1,2,3,4,5,6]
+// let even = arr.filter((e)=>{
+    
+//     return e%2===0
+        
+    
+// }).reduce((a,b)=>{
+//     return a+b
+// })
+// console.log(even);
+
 
 
 //------------------question------------------------------------------
@@ -391,6 +423,17 @@ console.log("Lets start");
 
 
 
+//--------------------again upr wala--------------------------
+
+// let nums = [5,10,15,20]
+// let sum = nums.reduce((a,b)=>{
+//     return a+b
+// })
+// let avg = sum/nums.length
+// console.log(avg);
+
+
+
 
 //-----============question------------------------
 
@@ -410,5 +453,17 @@ console.log("Lets start");
 // })
 
 // console.log(res)
+
+
+//---------------again upr wala--------------------------------
+
+// let nums = [1,2,3,4]
+// let sum = nums.reduce((a,b)=>{
+//     return a+b
+// })
+// let multi = nums.reduce((a,b)=>{
+//     return a*b
+// })
+// console.log(sum,multi);
 
 
