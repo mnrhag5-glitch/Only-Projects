@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 90px);
+      gap: 2px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .box {
+      height: 90px;
+      width: 90px;
+      font-size: 40px;
+      cursor: pointer;
+    }
+
+    .reset {
+      border-radius: 5px;
+      border: none;
+      color: rgb(108, 104, 104);
+      height: 30px;
+      width: 80px;
+      font-size: 18px;
+      margin-top: 35px;
+      cursor: pointer;
+    }
+
+    .msg {
+      margin-top: 50px;
+      font-size: 20px;
+    }
+  </style>
+
+  <body>
+    <h3>TIC-TAC-TOE</h3>
+    <div class="container">
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+    </div>
+
+    <div class="msg">
+      <h2></h2>
+    </div>
+    <button class="reset">restart</button>
+
+    <script>
+      let boxes = document.querySelectorAll(".box");
+      let msg = document.querySelector(".msg");
+      let reset = document.querySelector(".reset");
+
+      let turnO = true;
+      let draww = 0;
+
+      for (let box of boxes) {
+        box.addEventListener("click", () => {
+          draww++;
+          if (turnO) {
+            box.innerText = "O";
+            turnO = false;
+          } else {
+            box.innerText = "X";
+            turnO = true;
+          }
+          box.disabled = true;
+          checkWinner();
+          if (draww === 9 && !checkWinner()) {
+            draw();
+          }
+        });
+      }
+
+      function draw() {
+        msg.innerText = "Draw 🙌🙌";
+      }
+
+      let winpatterns = [
+        [0, 1, 2], // Top row
+        [3, 4, 5], // Middle row
+        [6, 7, 8], // Bottom row
+        [0, 3, 6], // Left column
+        [1, 4, 7], // Middle column
+        [2, 5, 8], // Right column
+        [0, 4, 8], // Main diagonal
+        [2, 4, 6], // Anti-d
+      ];
+
+      function checkWinner() {
+        for (let pattern of winpatterns) {
+          let a = boxes[pattern[0]].innerText;
+          let b = boxes[pattern[1]].innerText;
+          let c = boxes[pattern[2]].innerText;
+
+          if (a !== "" && (b !== "") & (c !== "")) {
+            if ((a == b) & (b == c)) {
+              winner(a);
+            }
+          }
+        }
+      }
+
+      function winner(a) {
+        msg.innerText = `Congratulation winner is ${a} 🎉🎉`;
+        disabled();
+      }
+
+      function disabled() {
+        for (let box of boxes) {
+          box.disabled = true;
+        }
+      }
+
+      function restart() {
+        for (let box of boxes) {
+          box.innerText = "";
+          turnO = true;
+          enabled();
+          msg.innerText = "";
+          draww = 0;
+        }
+      }
+
+      reset.addEventListener("click", () => {
+        return restart();
+      });
+
+      function enabled() {
+        for (let box of boxes) {
+          box.disabled = false;
+        }
+      }
+    </script>
+  </body>
+</html>
