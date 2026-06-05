@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Registration System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
 
-<h2>Student Registration System</h2>
+    <h2>Student Registration System</h2>
 
-<form class="form">
-  <input type="text" class="name" placeholder="Name">
-  <input type="number" class="studentId" placeholder="ID">
-  <input type="email" class="email" placeholder="Email">
-  <input type="number" class="number" placeholder="Phone">
-  <button type="submit">Add</button>
-</form>
+    <form class="form">
+        <input type="text" class="name" placeholder="Enter Name">
+        <input type="text" class="id" placeholder="Enter ID">
+        <input type="email" class="email" placeholder="Enter Email">
+        <input type="number" class="number" placeholder="Enter Phone">
+        <button>Add Student</button>
+    </form>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>ID</th>
-      <th>Email</th>
-      <th>Phone</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody class="tablebody"></tbody>
-</table>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+                <th>number</th>
+                <th>action</th>
+                <th>action</th>
+            </tr>
+        </thead>
 
-<script src="app.js"></script>
+        <tbody class="tableBody">
+
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
