@@ -186,8 +186,213 @@
 
 
 
-let students = JSON.parse(localStorage.getItem("students")) || [] // storge bnai
-// let students = []
+// let students = JSON.parse(localStorage.getItem("students")) || [] // storge bnai
+// // let students = []
+// let editIndex = null;   //mtlb is variable me koi value nhi hai  ya khali hai
+// let form = document.querySelector(".form")
+// let name = document.querySelector(".name")
+// let id = document.querySelector(".id")
+// let email = document.querySelector(".email")
+// let number = document.querySelector(".number")
+// let table = document.querySelector(".tableBody")
+
+
+// form.addEventListener('submit',(e)=>{   //event chlaya
+//     e.preventDefault();    // reload roka
+
+//     if(name.value=="" || id.value=="" ||email.value==""||number.value==""){
+//         alert("fill all the information")      // condition + alert diya
+//         return;   // condition ko yhi stop krwa do
+//     }
+
+// if(editIndex === null){
+
+//     students.push({
+//         name:name.value,
+//         id:id.value,
+//         email:email.value,
+//         number:number.value
+//     });
+
+// }else{
+
+//     students[editIndex] = {
+//         name:name.value,
+//         id:id.value,
+//         email:email.value,
+//         number:number.value
+//     };
+
+//     editIndex = null;
+// }
+
+//   localStorage.setItem("students",JSON.stringify(students))
+//   showData();
+//   form.reset();
+// })
+
+
+// function showData(){
+//     table.innerHTML="";
+
+// for(let i = 0; i < students.length; i++){  //kuki is loop me idex milta hai isliye use hua.
+//     let student = students[i];
+//         table.innerHTML+=`
+//         <tr>
+//         <td>${student.name}</td>
+//         <td>${student.id}</td>
+//         <td>${student.email}</td>
+//         <td>${student.number}</td>
+//         <td>  <button onclick="deleteStudent(${i})">Delete</button></td>
+//         <td>  <button onclick="editStudent(${i})">edit</button></td>
+
+//         </tr>`}}
+
+//         function deleteStudent(index) {
+
+//     students.splice(index, 1);
+
+//     localStorage.setItem(
+//         "students",
+//         JSON.stringify(students)
+//     );
+
+//     showData();
+// }
+    
+// function editStudent(index){
+
+//     editIndex = index;
+
+//     name.value = students[index].name;
+//     id.value = students[index].id;
+//     email.value = students[index].email;
+//     number.value = students[index].number;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------------again try---------------------------------
+
+
+
+
+
+// let students = JSON.parse(localStorage.getItem("students")) || []
+// //let students=[]
+// let editIndex = null
+// let form = document.querySelector(".form")
+// let name = document.querySelector(".name")
+// let id = document.querySelector(".id")
+// let email = document.querySelector(".email")
+// let number = document.querySelector(".number")
+// let table = document.querySelector(".tableBody")
+
+
+// form.addEventListener('submit',(e)=>{
+//     e.preventDefault();
+
+//     if(name.value==""||id.value==""||email.value==""||number.value==""){
+//         alert("Fill all information")
+//         return;
+//     }
+//     if(editIndex===null){
+//     students.push({
+//    name:name.value,
+//    id:id.value,
+//    email:email.value,
+//    number:number.value
+
+//     })}else{
+//         students[editIndex]={
+//                name:name.value,
+//    id:id.value,
+//    email:email.value,
+//    number:number.value
+//         }
+//     }editIndex=null
+
+// localStorage.setItem("students",JSON.stringify(students))
+// showData();
+// form.reset();
+
+
+// })
+
+// function showData(){
+//     table.innerHTML = "";
+// for(let i=0;i<students.length;i++)
+//     { let student = students[i]
+//         table.innerHTML+=`
+//         <tr>
+//     <td>${student.name}</td>
+//     <td>${student.id} </td>
+//     <td>${student.email} </td>
+//     <td>${student.number} </td>
+
+//     <td><button onclick="deletee(${i})" >delete</button></td>
+//     <td><button onclick="edit(${i})"  >edit</button></td>
+//         </tr>`}}
+
+// showData();
+
+
+// function deletee(index){
+// let check = confirm("are you sure ?");
+// if(check){
+//     return
+// }
+// students.splice(index,1)
+//   localStorage.setItem("students",JSON.stringify(students))
+//   showData();
+
+// }
+
+// function edit(index){
+//     editIndex = index;
+//    name.value = students[index].name;
+//    id.value = students[index].id;
+//    email.value = students[index].email;
+//    number.value = students[index].number;
+// }
+
+
+// showData();
+
+
+
+
+
+
+
+
+
+
+
+//=------------------------------agian try--------------------------------------------
+
+
+let students = JSON.parse(localStorage.getItem("students")) || []
+let editIndex = null
+
 let form = document.querySelector(".form")
 let name = document.querySelector(".name")
 let id = document.querySelector(".id")
@@ -196,71 +401,69 @@ let number = document.querySelector(".number")
 let table = document.querySelector(".tableBody")
 
 
-form.addEventListener('submit',(e)=>{   //event chlaya
-    e.preventDefault();    // reload roka
-
-    if(name.value=="" || id.value=="" ||email.value==""||number.value==""){
-        alert("fill all the information")      // condition + alert diya
-        return;   // condition ko yhi stop krwa do
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    if(name.value===""||id.value===""||email.value===""||number.value===''){
+        alert("Fill all the Information")
+        return;
     }
 
-  students.push({           // ye studenet [] me store ho jayenge
-    name:name.value,
-    id:id.value,
-    email:email.value,
-    number:number.value
-  })
 
-  localStorage.setItem("students",JSON.stringify(students))
-  showData();
-  form.reset();
+if(editIndex===index){
+    name=name.value,
+        id=id.value,
+        email=email.value,
+        number=number.value
+}
+
+
+    students.push({
+        name:name.value,
+        id:id.value,
+        email:email.value,
+        number:number.value
+    })
+
+    localStorage.setItem("students",JSON.stringify(students))
+    showData();
+    form.reset();
 })
 
-
 function showData(){
-    table.innerHTML="";
-
-for(let i = 0; i < students.length; i++){  //kuki is loop me idex milta hai isliye use hua.
-    let student = students[i];
+    table.innerHTML=""
+    for(let i=0;i<students.length;i++){
+      student = students[i]
         table.innerHTML+=`
         <tr>
         <td>${student.name}</td>
         <td>${student.id}</td>
         <td>${student.email}</td>
         <td>${student.number}</td>
-        <td>  <button onclick="deleteStudent(${i})">Delete</button></td>
-        <td>  <button onclick="editStudent(${i})">edit</button></td>
-
-        </tr>`}}
-
-        function deleteStudent(index) {
-
-    students.splice(index, 1);
-
-    localStorage.setItem(
-        "students",
-        JSON.stringify(students)
-    );
-
-    showData();
+        <td><button onclick = deletee(${i})>delete</button></td>
+<td><button onclick = edit(${i})>edit</button></td>
+        </t>  `
+    }
 }
-    
-
-
-        function editStudent(index) {
-
-    students.splice(index, 0,'');
-
-    localStorage.setItem(
-        "students",
-        JSON.stringify(students)
-    );
-
     showData();
+
+function deletee(index){
+let check = confirm("Are you sure ?")
+if(!check){
+    return
+}else
+
+     {   students.splice(index,1)
+       localStorage.setItem("students",JSON.stringify(students))
+       
+       showData();
+}}
+
+
+function edit(){
+    index = editIndex[i]
+    name.value = students.name
+    id.value = students.id
+    email.value = students.email
+    number.value = students.number
+
 }
-    
-
-
-
-
-
