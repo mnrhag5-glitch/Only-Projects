@@ -409,20 +409,25 @@ form.addEventListener('submit',(e)=>{
     }
 
 
-if(editIndex===index){
-    name=name.value,
-        id=id.value,
-        email=email.value,
-        number=number.value
-}
-
-
-    students.push({
+if(editIndex===null){
+     students.push({
         name:name.value,
         id:id.value,
         email:email.value,
         number:number.value
     })
+}else{
+    students[editIndex]={
+              name:name.value,
+        id:id.value,
+        email:email.value,
+        number:number.value
+    }
+}
+editIndex==null
+
+
+
 
     localStorage.setItem("students",JSON.stringify(students))
     showData();
@@ -441,7 +446,7 @@ function showData(){
         <td>${student.number}</td>
         <td><button onclick = deletee(${i})>delete</button></td>
 <td><button onclick = edit(${i})>edit</button></td>
-        </t>  `
+        </tr>  `
     }
 }
     showData();
@@ -459,11 +464,12 @@ if(!check){
 }}
 
 
-function edit(){
-    index = editIndex[i]
-    name.value = students.name
-    id.value = students.id
-    email.value = students.email
-    number.value = students.number
+function edit(index){
+ editIndex = index
+    name.value = students[index].name
+    id.value = students[index].id
+    email.value = students[index].email
+    number.value = students[index].number
 
 }
+       showData();
