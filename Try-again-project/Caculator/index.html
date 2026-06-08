@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -88,5 +88,101 @@ buttons.forEach((btn)=>{
 
 </script>
 
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        text-align: center;
+        justify-content: center;
+    }
+    button{
+        height: 75px;
+        width: 70px;
+        cursor: pointer;
+        background-color: rgb(213, 214, 214);
+        border: none;
+        font-size: 30px;
+        color: rgb(125, 124, 124);
+    }
+    .calculator{
+        gap: 3px;
+        display: grid;
+        grid-template-columns: repeat(4,70px);
+        justify-content: center;
+    }
+    .display{
+        width: 290px;
+        height: 75px;
+        background-color: rgb(215, 218, 218);
+        border-radius: 5px;
+        border: 1px solid white;
+        font-size:30px ;
+        text-align: right;
+    }
+
+</style>
+<body>
+    <h2>Calculator</h2>
+    <input type="text" class="display" readonly>
+    <div class="calculator">
+
+    <button>C</button>
+    <button>/</button>
+    <button>*</button>
+    <button>-</button>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>+</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>=</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>0</button>
+    </div>
+
+
+    <script>
+
+
+
+let buttons = document.querySelectorAll("button")
+let display = document.querySelector(".display")
+let operator = ["/","*","-","+"]
+ 
+buttons.forEach((btn)=>{
+    btn.addEventListener("click",()=>{
+        if(btn.innerText==="C"){
+            display.value = ""
+        }else if(btn.innerText==="="){
+         try{   display.value = eval(display.value)}
+         catch{
+            display.value="Error"
+         }
+        }else{
+            let lastChar = display.value.slice(-1)
+            if(operator.includes(btn.innerText) && operator.includes(lastChar)){
+                return
+            }
+            display.value+=btn.innerText
+        }
+    })
+})
+    </script>
 </body>
 </html>
