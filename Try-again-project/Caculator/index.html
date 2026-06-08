@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    body{
+        display: flex;
+       align-items: center;
+     
+        justify-content: center;
+        background-color: #bcb9b9;
+
+    }
+    .calculator{
+        display:grid ;
+        grid-template-columns: repeat(4,70px);
+        gap: 5px;
+    }
+.display{
+    grid-column:span 4;
+    height:55px;
+    font-size:24px;
+    text-align:right;
+}
+button{
+    height:70px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+</style>
+<body>
+    <div class="calculator">
+        <h2>Calculator</h2>
+
+        <input type="text" class="display">
+        <button>C</button>
+        <button>/</button>
+        <button>*</button>
+        <button>-</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>+</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>=</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+
+    </div>
+<script>
+
+
+
+
+let buttons = document.querySelectorAll("button")
+let display = document.querySelector('.display')
+let operator = ["/","*","-","+"]
+
+buttons.forEach((btn)=>{
+    btn.addEventListener("click",()=>{
+        if(btn.innerText==="C"){
+            display.value="";
+        }else if(
+            btn.innerText==="="
+        ){
+            display.value = eval(display.value)
+        }
+        else{
+            let lastChar = display.value.slice(-1)
+            if(operator.includes(btn.innerText)&&operator.includes(lastChar)){
+                return;
+            }
+            display.value+=btn.innerText
+        }
+    })
+})
+
+
+
+</script>
+
+</body>
+</html>
