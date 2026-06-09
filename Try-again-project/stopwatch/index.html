@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stopwatch</title>
+
+<style>
+    body{
+        text-align:center;
+        margin-top:100px;
+    }
+
+    .time{
+        font-size:60px;
+    }
+
+    button{
+        height:50px;
+        width:100px;
+        font-size:18px;
+        cursor:pointer;
+        margin:5px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1 class="time">00:00:00</h1>
+
+<button class="start">Start</button>
+<button class="stop">Stop</button>
+<button class="reset">Reset</button>
+
+<script>
+
+// let time = document.querySelector(".time");
+
+// let startBtn = document.querySelector(".start");
+// let stopBtn = document.querySelector(".stop");
+// let resetBtn = document.querySelector(".reset");
+
+// let hours = 0;
+// let minutes = 0;
+// let seconds = 0;
+
+// let interval;
+
+
+// // Display Update Function
+
+// function updateTime(){
+
+//     let h = hours < 10 ? "0" + hours : hours;
+//     let m = minutes < 10 ? "0" + minutes : minutes;
+//     let s = seconds < 10 ? "0" + seconds : seconds;
+
+//     time.innerText = h + ":" + m + ":" + s;
+// }
+
+// // Start
+
+// startBtn.addEventListener("click",()=>{
+
+//      clearInterval(interval);
+
+//     interval = setInterval(()=>{
+//             console.log("Timer Running");
+
+//         seconds++;
+
+//         if(seconds === 60){
+//             seconds = 0;
+//             minutes++;
+//         }
+
+//         if(minutes === 60){
+//             minutes = 0;
+//             hours++;
+//         }
+
+//         updateTime();
+
+//     },1000);
+
+// });
+
+
+// // Stop
+// stopBtn.addEventListener("click",()=>{
+
+//     clearInterval(interval);
+
+// });
+
+
+// // Reset
+// resetBtn.addEventListener("click",()=>{
+
+//     clearInterval(interval);
+
+//     hours = 0;
+//     minutes = 0;
+//     seconds = 0;
+
+//     updateTime();
+
+// });
+
+
+
+
+
+
+
+
+
+//===================try again===================================
+
+let time = document.querySelector(".time")
+let startBtn = document.querySelector(".start")
+let stopBtn = document.querySelector(".stop")
+let resetBtn = document.querySelector(".reset")
+ 
+let hour = 0;
+let minute = 0;
+let second = 0;
+
+let inervel;
+ 
+function update(){
+    let h = hour<10 ? "0"+hour : hour;
+    let m = minute<10 ? "0"+minute : minute;
+    let s = second<10 ? "0"+second : second;
+    time.innerText = h +":"+ m +":"+ s
+}
+
+startBtn.addEventListener('click',()=>{
+    clearInterval(inervel)
+  inervel = setInterval(()=>{
+     console.log("Timer Running");
+    second++;
+    if(second===60){
+        second=0;
+        minute++;
+    }if(minute===60){
+        minute=0;
+        hour++;
+    }
+    update();
+  },1000)
+})
+
+function stop(){
+    clearInterval(inervel)
+}
+
+
+
+</script>
+
+</body>
+</html>
