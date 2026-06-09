@@ -152,9 +152,18 @@ startBtn.addEventListener('click',()=>{
   },1000)
 })
 
-function stop(){
+stopBtn.addEventListener("click",()=>{
     clearInterval(inervel)
+})
+
+resetBtn.addEventListener("click",()=>{
+    clearInterval(inervel)
+    hour=0;
+    second=0;
+    minute=0
+    update();
 }
+)
 
 
 
