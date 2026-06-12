@@ -40,6 +40,20 @@
 
 
 
+async function test(){
+    let response = await fetch(
+        "https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=YOUR_API_KEY&units=metric"
+    );
+
+    let data = await response.json();
+
+    console.log(data);
+}
+
+test();
+
+
+
 //-------async await .then ka easy version hai-------
 
 // async function getUsers(){
@@ -59,12 +73,12 @@
 // .then(data=>console.log(data));
 
 
-// async function hello(){
-//     let response = await fetch("https://jsonplaceholder.typicode.com/users");
-//     let data = await response.json();
-//     console.log(data);
-// }
-// hello();
+async function hello(){
+    let response = await fetch("https://jsonplaceholder.typicode.com/users");
+    let data = await response.json();
+    console.log(data);
+}
+hello();
 
 
 
