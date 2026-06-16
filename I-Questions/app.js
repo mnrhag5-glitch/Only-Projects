@@ -342,4 +342,65 @@
 // }
 // hello(1,2,3,4,5)
 
-console.log(![])
+
+
+//---------------------------------counter 1 bdhega------------------------------
+
+// var createCounter = function(n) {
+//     let count = n;
+//     return function() {
+//        return count++ 
+//     };
+// };
+
+// let counter = createCounter(10)
+
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+//---------------------------------------------------------------------------------
+
+
+//------------------------------obj distucturing----------------------------
+
+
+// const user = {
+//     name: "Gautam",
+//     age: 22,
+//     city: "Shimla"
+// };
+
+// const { name, age, city } = user;
+
+// console.log(name); // Gautam
+// console.log(age);  // 22
+// console.log(city); // Shimla
+
+
+//---------------------------------------------------------------------------------
+
+// let i = 0;
+// do{
+//      console.log(i)
+//      i++
+     
+// }while(i<=7)
+
+// let i  = 0
+// while(i<=5){
+//      console.log(i);
+//      i++;
+     
+// }
+
+// let i = 0
+// for(i = 0; i<=6;i++)
+//      console.log(i);
+     
+
+let obj = { a: 1, b: 2 };
+
+for (let key in obj) {
+  console.log(key,obj[key]);
+}
