@@ -380,27 +380,5 @@
 
 //---------------------------------------------------------------------------------
 
-// let i = 0;
-// do{
-//      console.log(i)
-//      i++
-     
-// }while(i<=7)
-
-// let i  = 0
-// while(i<=5){
-//      console.log(i);
-//      i++;
-     
-// }
-
-// let i = 0
-// for(i = 0; i<=6;i++)
-//      console.log(i);
-     
-
-let obj = { a: 1, b: 2 };
-
-for (let key in obj) {
-  console.log(key,obj[key]);
-}
+let sum = (a,b)=>a+b;
+console.log((sum(14,25)));
