@@ -1,7 +1,7 @@
 ///================Closures==================================
 
 // function outer(){
-//     let count = 0;
+//     let count = 10;
 //     function inner(){
 //         count++;
 //         console.log(count);
@@ -147,3 +147,16 @@
 
 
 
+function num(){
+  // let count = 10;
+  function sum(){
+    count++;
+    console.log(count);
+    
+  }return sum;
+}
+let plus1 = num()
+plus1()
+plus1()
+plus1()
+plus1()

@@ -5,13 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+
+    button{
+        border-radius: 15px;
+        border: none;
+        background-color: rgb(181, 179, 177);
+    }
+</style>
 <body>
 
     <h3>Learning Closures</h3>
     <p>function bahar wala variables yaad rakhta hai</p>
-    <p>functio + remembered variables</p>
+    <p>function + remembered variables</p>
     <h5>closur happens when inner function uses outer function variables</h5>
     <h6>Closure mtlb inner function outer variables a\Access kar sakta hai</h6>
+    <button id="red">red</button>
+    <button id="blue">blue</button>
+    <button id="green">green</button>
+    <button id="orange">orange</button>
+    <button id="pink">pink</button>
+    <button id="yellow">yellow</button>
     <script src="app.js"></script>
+    <script>
+
+function clickHandler(color){
+    return function(){
+    document.body.style.backgroundColor = `${color}`
+    }
+}
+document.getElementById("red").onclick = clickHandler("red")
+document.getElementById("blue").onclick = clickHandler("blue")
+document.getElementById("green").onclick = clickHandler("green")
+document.getElementById("orange").onclick = clickHandler("orange")
+document.getElementById("pink").onclick = clickHandler("pink")
+document.getElementById("yellow").onclick = clickHandler("yellow")
+    </script>
 </body>
 </html>
