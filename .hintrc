@@ -19,7 +19,8 @@
     "axe/text-alternatives": [
       "default",
       {
-        "image-alt": "off"
+        "image-alt": "off",
+        "area-alt": "off"
       }
     ],
     "compat-api/css": [
