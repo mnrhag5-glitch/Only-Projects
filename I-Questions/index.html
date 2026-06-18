@@ -8,5 +8,23 @@
 <body>
     <h4>Interview Question</h4>
     <script src="app.js"></script>
+   
+    <div id="id">
+        <button id="btn">click here</button>
+
+
+    </div>
 </body>
+<script>
+     document.getElementById("btn").addEventListener('click',(e)=>{
+  e.stopPropagation()
+        console.log("child is clicked");
+        
+    })
+
+      document.getElementById("id").addEventListener('click',()=>{
+        console.log("parent is clicked");
+        
+    })
+</script>
 </html>

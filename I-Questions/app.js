@@ -444,3 +444,83 @@
 
 //-----------------------------------------Lexical Scope-------------------------------------------------
 
+
+// // 👇 Parent Function
+// function num() {
+
+//   // 👇 Parent ka variable
+//   let count = 0;
+
+//   // 👇 Child (Inner) Function
+//   function sum() {
+
+//     // 👇 Lexical Environment:
+//     // sum() parent function num() ke variable (count)
+//     // ko access kar raha hai.
+
+//     count++;
+
+//     console.log(count);
+//   }
+
+//   // 👇 Child function ko return kar diya.
+//   return sum;
+// }
+
+// // 👇 num() call hua.
+// let plus1 = num();
+
+// // 👆 Yahin par num() ka execution khatam ho gaya.
+
+// // Lekin...
+// // sum() return ho chuka hai aur plus1 me store hai.
+// // Isliye JavaScript count ko delete nahi karti.
+// // Isi ko Closure kehte hain.
+
+// // Ab plus1() call karna matlab sum() call karna.
+
+// plus1(); // count = 1
+// plus1(); // count = 2
+// plus1(); // count = 3
+// plus1(); // count = 4
+
+
+//----------------------------------------------------------------------------
+
+//---------------------how to remove duplicate elements--------------------
+
+// let arr = [1, 2, 2, 3, 4, 4];
+
+// let unique = [...new Set(arr)];
+
+// console.log(unique);
+
+
+// //-----------with loop==>>>>>
+
+// let arr = [1, 2, 2, 3, 4, 4];
+// let unique = [];
+
+// for (let i of arr) {
+//   if (!unique.includes(i)) {
+//     unique.push(i);
+//   }
+// }
+
+// console.log(unique);
+
+// //----with filter====>>>>>>>
+
+// let arr = [1, 2, 2, 3, 4, 4];
+
+// let unique = arr.filter((item, index) => {
+//   return arr.indexOf(item) === index;
+// });
+
+// console.log(unique);
+
+//-----------------------------------------------------------------------------------------------
+
+let arr = [1,2,3,2,4,1,5,6,7,5]
+
+
