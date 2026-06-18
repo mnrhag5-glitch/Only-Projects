@@ -12,6 +12,9 @@
         border: none;
         background-color: rgb(181, 179, 177);
     }
+    body{
+        text-align: center;
+    }
 </style>
 <body>
 
@@ -40,6 +43,11 @@ document.getElementById("green").onclick = clickHandler("green")
 document.getElementById("orange").onclick = clickHandler("orange")
 document.getElementById("pink").onclick = clickHandler("pink")
 document.getElementById("yellow").onclick = clickHandler("yellow")
+
+let div = document.createElement("div")
+    div.innerText = "Hello this is div"
+    document.body.appendChild(div)
+
     </script>
 </body>
 </html>
