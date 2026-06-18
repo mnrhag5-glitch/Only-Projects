@@ -148,7 +148,7 @@
 
 
 function num(){
-  // let count = 10;
+  let count = 10;
   function sum(){
     count++;
     console.log(count);
