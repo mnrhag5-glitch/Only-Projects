@@ -119,27 +119,47 @@
 //--------question 2------------------
 
 
-class Vehicle{
-    constructor(brand){
-      this.brand = brand
-    }
+// class Vehicle{
+//     constructor(brand){
+//       this.brand = brand
+//     }
 
 
- showBrand(){
-    console.log("brand is",this.brand);
+//  showBrand(){
+//     console.log("brand is",this.brand);
     
- }
+//  }
 
 
-}
+// }
 
-class Bike extends Vehicle{
-    constructor(brand,speed){
-        super(brand)
+// class Bike extends Vehicle{
+//     constructor(brand,speed){
+//         super(brand)
+//     }
+// }
+
+// let newCar = new Vehicle("bmw")
+// let newBike = new Bike("Yamaha",200)
+// newCar.showBrand()
+// newBike.showBrand()
+
+
+
+
+
+//--------------------------------------
+
+class hello{
+    constructor(name,sur){
+this.name = name;
+this.sur = sur;
     }
-}
+helloo(){
+    console.log("Hello "+ this.name);}}
 
-let newCar = new Vehicle("bmw")
-let newBike = new Bike("Yamaha",200)
-newCar.showBrand()
-newBike.showBrand()
+    let person1 = new hello("gautam","thakur")
+    let person2 = new hello("sejal","rana")
+
+    person1.helloo()
+    person2.helloo()
