@@ -521,6 +521,404 @@
 
 //-----------------------------------------------------------------------------------------------
 
-let arr = [1,2,3,2,4,1,5,6,7,5]
 
 
+//-------------------function to reverse string--------------------------------
+// function reverse(){
+//    let a = "gautam";
+//    let rev = '';
+//    for(let i = a.length-1;i>=0;i--){
+//      rev+=a[i];
+//    }return rev;
+// }
+// console.log(reverse());
+
+
+
+
+
+// let string = "Full-Stack-Development";
+// let reverse = '';
+// for(let i = string.length-1;i>=0;i--){
+//      reverse+=string[i];
+// }
+// console.log(reverse);
+
+
+
+// let arr = [1,2,3,4,5];
+// let rev = [];
+// for(let i=arr.length-1;i>=0;i--){
+// rev.push(arr[i])
+// }
+// console.log(rev);
+
+
+//-----------------------------------------------------------------------------------
+
+//--------------------------------largest niumber in array-=-----------------------------
+
+// let arr = [2,4,5,7,8,9]
+//  arr.sort((a,b)=>{
+//      return b-a
+// })
+// console.log(arr[0]);
+
+
+
+
+
+// let arr = [2,4,5,7,8,9]
+// let res = Math.max(...arr)
+// console.log(res);
+
+
+
+
+
+
+// let arr = [2,4,5,7,8,9]
+// let max = arr[0]
+// for(let i = 0;i<arr.length;i++){
+//      if(max>arr[i]){
+//           max=arr[i]
+//      }
+// }
+
+// console.log(max);
+
+
+//-----------------------------------------------------------------------------------
+
+//----------------------------------remove dupliicate form arr ------------------------
+
+
+// let arr = [1,2,3,4,5,5,6,4]
+// let orginal = [...new Set(arr)]
+// console.log(orginal);
+
+
+//-----------------------------------------------------------------------------------
+
+//-----------------------flatten a nested array--------------------------------
+
+// let arr = [1, [2, 3], [4, [5, 6]]];
+// console.log(arr.flat(Infinity));
+
+
+
+//-----------------------------------------------------------------------------------
+
+//-------------------------------------Shallow copy----------------------------------
+
+// let obj1 = {
+//   name: "Ram",
+//   address: { city: "Delhi" }
+// };
+
+// let obj2 = { ...obj1 };
+
+// obj2.address.city = "Mumbai";
+
+// console.log(obj1.address.city); // Mumbai
+
+//-----------------------------------------------------------------------------------
+
+
+//---------------------------------Deep Copy -------------------------------
+
+
+// let obj1 = {
+//   name: "Ram",
+//   address: {
+//     city: "Delhi"
+//   }
+// };
+
+// let obj2 = structuredClone(obj1);
+
+// obj2.address.city = "Mumbai";
+
+// console.log(obj1.address.city); // Delhi
+// console.log(obj2.address.city); // Mumbai
+
+//-----------------------------------------------------------------------------------
+
+
+//--------------------find longest string in variable--------------------------------
+
+// let arr = ["cat", "elephant", "dog", "javascript"];
+// let res = arr.reduce((a,b)=>{
+
+//      if(a.length>b.length){
+// return a;
+          
+//      }else{
+// return b;
+          
+//      }
+// })
+// console.log(res);
+
+
+//if in string ===========================
+
+// let str = "full stack development";
+// let long = str.split(' ')
+// let longest = long.reduce((a,b)=>{
+//      if(a.length > b.length){
+//           return a;
+//      }else {return b}
+// })
+
+// console.log(longest);
+
+//-------------thoda or short -----------------
+
+// let str = "hello this is gautam"
+// let longest = str.split(" ").reduce((a,b)=>
+//    a.length > b.length ? a:b
+// )
+// console.log(longest);
+
+
+//--------------------------------------------------------------------------------------------------
+//-------------------------------- infinite curring ------------------------------------------------------------------
+
+// function add(a){
+//      return function(b){
+//      if(b) return add(a+b)
+//           return a;
+// }}
+// console.log(add(5)(5)(4)());
+
+//-------------------------more short-------------------------------------------------
+
+// function add(a){
+// return b => b ? add(a+b) : a}
+// console.log(add(5)(8)(7)(30)());
+
+
+//-----------------------------------------------------------------------------------------
+//---------------------------------- Promise  -------------------------------------------------------
+
+// let pro = new Promise((res,rej)=>{
+//      let result = true;
+//      if(result){
+//           res("You are pass")
+//      }else{
+//           rej("You are fail")
+//      }
+// })
+
+// pro.then((data)=>{console.log(data);
+// })
+// .catch((error)=>{console.log("Something is wrong");
+// })
+
+//------------------------------------------------------------------------------------------
+
+//----------------arr disturtring- -------------------------------------------------
+
+//  let arr = [1,2,3,4,5,6,7,8,9,10]
+// // let[a,b,c] = arr;
+// // console.log(a,b,c);
+
+// // agr value bhut zyada ho to-->
+// let [...rest] = arr;
+// console.log(rest);
+
+//-----------------------------------------------------------------------------------------
+
+//------------------------------------rest parameter  -----------------------------------------------------
+
+// function hello(...yo){
+//      console.log(yo);
+     
+// }
+// (hello(1,2,3,4,5));
+
+
+//one more================>>>>>>>
+
+// function sum(...num){
+//      let total = 0;
+//      for(let nums of num){
+//            total+=nums;
+//      }
+//      console.log(total);
+     
+// }
+// (sum(1,2,3,4))
+
+
+//------------------------------------------------------------------------------------------
+//-------------------------------- Infinite curryng ----------------------------------------------------------
+
+// function hello(a){
+//      return function(b){
+//   if(b) return hello(a+b)
+//      return a}
+// }
+// console.log(hello(1)(5)(6)());
+
+
+//-----------------------------------string or nuber ko alga alag kro ------------------------------------------------------
+
+// let str = [1,2,3,"gautam","hy",4,5]
+// let strings = []
+// let numbers = []
+
+// for (let value of str){
+//      if(typeof value==="string"){
+//    strings.push(value)
+//      }else if(typeof value==="number")
+// {
+//      numbers.push(value)
+// }}
+// console.log(strings);
+// console.log(numbers);
+
+
+//----------filter method se>>>>>>>>>>>>
+
+// let str = [1,2,3,"gautam","hy",4,5]
+// let numbers = str.filter(val => typeof val ==="number")
+// let strings = str.filter(val => typeof val ==="string")
+// console.log(numbers);
+// console.log(strings);
+
+
+//--------------------------------------------------------------------------------------------------
+
+// console.log([]==![]);  true
+   
+// console.log([]==[]);  false
+   
+// console.log([]===[]);  false
+   
+// console.log([]===![]);   //  false
+
+// console.log({}===!{});  false
+//  //
+// console.log({}==={});  //  false
+
+// console.log({}==!{}); fasle
+
+// console.log({}=={});   false
+
+// console.log("seju"-100);  nan
+
+
+//refrence = like a address
+// primitive value store krte hai or onject or array refrence (address) store krte hai
+
+//----------------------------------------------------------------------------------------
+
+//--------------------split---------------------------------------------------------------
+
+// let str = "HTML CSS JavaScript";
+
+// let arr = str.split(" ");
+
+// console.log(arr);
+// convert string into an array-------------------------------------------------------------
+//------------------------------------------------------------------------------------------
+
+
+
+//-------------------------------Closure -----------------------------------------------
+
+// function outer(){
+//      let count = 0
+//      function inner(){
+//           count++
+// return count
+          
+//      }
+//      return inner
+// }
+// let add = outer()
+
+// console.log(add());
+// console.log(add());
+// console.log(add());
+
+
+//------------------------------------------------------------------------------------------------
+
+//-------------------------------Pure Function ------------------------------------------
+
+// function add(a, b) {
+//     return a + b;
+// }
+
+// console.log(add(2, 3)); // 5
+// console.log(add(2, 3)); // 5     //  same input or same output............
+
+// Not Pure Function -->>>>>>>>>>>>>>>
+
+// let count = 0;
+
+// function increment() {
+//     count++;
+//     return count;
+// }
+
+// console.log(increment()); // 1
+// console.log(increment()); // 2      har baroutput change ho rha hai.............
+
+//-----------------------------------------------------------------------------------------------
+
+//--------------------------Call  Apply   Bind  ----------------------------------
+
+// let obj ={
+//      name: "gautam",
+// city : "delhi",
+// age : 22
+// }
+
+// let hello = function(name,city){
+// console.log(this.name +" "+"is from" + " "+this.city);
+// console.log(name,city);
+
+
+// }
+
+// hello.call(obj,"ram","america")
+
+
+//--------------aplly-->>>>>>>>>>>>>>.
+
+// hello.apply(obj,["ram","america"])
+
+
+//-------------bind==>>>>>>>>>>>>>>.
+
+// let result = hello.bind(obj,"delhi" , "india")
+
+// result()
+
+//------------------------------------------------------------------------------------------
+
+
+
+// console.log({}+[]);    // [object object]
+
+
+//--------------------------------------------------------------------------------------------------
+
+//---------------------------------remove fuplicate froma array -------------------------------------
+
+// let arr = [1,2,3,4,4,5,4,5,6,7,8,4,4,4,4,5,6,7,5,8,9,5,1,10]
+// let result = [...new Set(arr)]
+// console.log(result);
+
+//---------------------------------------------------------------------------------------
+
+
+//-------------------------------Find the longest -----------------------------------------------
+
+let arr = [4,5,6,7,8,9]
+let longest = Math.max(...arr)
+console.log(longest);
