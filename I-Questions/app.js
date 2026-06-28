@@ -919,6 +919,142 @@
 
 //-------------------------------Find the longest -----------------------------------------------
 
-let arr = [4,5,6,7,8,9]
-let longest = Math.max(...arr)
-console.log(longest);
+//-------------------with max->>>>>>
+
+// let arr = [4,5,6,7,8,9]
+// let longest = Math.max(...arr)
+// console.log(longest);
+
+
+// with reduce--->>>>>>>>>>>>
+
+
+// let arr = [1,2,3,4]
+// let long = arr.reduce((a,b)=>{
+//      if(a>b){
+//           return a;
+//      }else{
+//           return b;
+//      }
+// })
+//  console.log(long);
+ 
+
+
+//------------------------------------------------------------------------------------------
+
+
+//----------------------- arr ko sequence me lgao --------------------------------------
+
+// let arr = [1,3,5,7,8,9,3,4,5,7,8,9,45,65,76,34,45,65,8,98,98,1,23]
+// let removee = [...new Set(arr)]      // duplicate remmove kiya
+// let sequence = removee.sort((a,b)=>{
+//      return a-b                       // sequence me lgaya
+// })
+// console.log(sequence);
+
+
+//----------------------------------------------------------------------------------------
+ 
+//-------------------Template Litteral - --------------------------------------------------
+
+// let name = "ram"
+//  let age = 22
+
+//  console.log(`the person name is ${name}  and his age is ${age}`);
+ 
+
+//------------------------------------------------------------------------------------
+
+//-------------------------Some or Every ----------------------------------------
+
+// some(): Returns true if at least one element satisfies the condition.
+// every(): Returns true only if all elements satisfy the condition.
+
+// let arr = [10, 20, 30, 40];
+
+// let result = arr.some(num => num > 25);
+
+// console.log(result); // true
+
+
+
+// let arr = [10, 20, 30, 40];
+
+// let result = arr.every(num => num > 25);
+
+// console.log(result); // false
+
+//----------------------------------------------------------------------------------------
+
+
+//-----------------------------------Reverse the string --------------------------------
+
+
+// let strr = "hello"
+// let rev = ''
+// for(let i=strr.length-1;i>=0;i--){
+//    rev+=strr[i]
+// }
+// console.log(rev);
+
+
+//-------------------------------------------------------------------------------------------
+
+//-------------------------HOw can merged two obj or array ---------------------------------
+
+// let obj1 = { name: "Gautam" };
+// let obj2 = { age: 20 };
+
+// let merged = { ...obj1, ...obj2 };
+
+// console.log(merged);
+
+
+
+
+// let arr = [1,2,3]
+// let arr2 = [4,5,6]
+// let merged = [...arr,...arr2]
+// console.log(merged);
+
+
+//--------------------------------------------------------------------------------------------
+
+
+//------------------------------ Curring with nested or modern method -------------------
+
+// function a(a){
+//      return function (b){
+//           return function (c){
+//                return function (d){
+//                     return a+b+c+d
+//                }
+//           }
+//      }
+// }
+
+// console.log(a(1)(2)(3)(4));     its nested currynig
+
+
+
+//  INfinite Currying --->>>>
+
+// function hello(a){
+//      return function(b){
+//   if(b) return hello(a+b)
+//      return a}
+// }
+// console.log(hello(1)(5)(6)());
+
+
+//---------------------------------------------------------------------------------------------
+
+function add(a){
+     return function(b){
+          if(b===undefined)
+               return a
+          return add(a+b)
+     }
+}
+console.log(add(2)(3)(5)(5)());
