@@ -1212,11 +1212,31 @@
 
 //----------------------------------------------------------------------------------------
 
+//--------------------------------- Closure example --------------------------------------
 
 
-let obj = {
-    name: "ram",
-    age: 22
+// function cart(){
+//     let total = 0;
+//     return function(price)
+//    { total+=price;
+//     console.log(total);
+    
+
+// }}
+// let newResult = cart()
+// newResult(100)
+// newResult(10)
+// newResult(1)
+
+function num(){
+    let count = 10;
+    function add(){
+        count++;
+        console.log(count);
+        
+    }return add
 }
-
-console.log(Object.entries(obj));
+let sum = num()
+sum()
+sum()
+sum()
