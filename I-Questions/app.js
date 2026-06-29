@@ -1,6 +1,8 @@
 // ***********************   SWAP QUETION   ***********************************
 
 
+
+
 // let a = 10;
 // let b = 20;
 
@@ -1228,15 +1230,65 @@
 // newResult(10)
 // newResult(1)
 
-function num(){
-    let count = 10;
-    function add(){
-        count++;
-        console.log(count);
+// function num(){
+//     let count = 10;
+//     function add(){
+//         count++;
+//         console.log(count);
         
-    }return add
-}
-let sum = num()
-sum()
-sum()
-sum()
+//     }return add
+// }
+// let sum = num()
+// sum()
+// sum()
+// sum()
+
+//---------------------------------------------------------------------------------------------
+
+
+
+
+//-------------------------- Immidiately Invoked Function ---------------------------------------
+
+// (function hello(){
+//     console.log("Hello World");
+    
+// })();
+// (function oneMOre(){
+//     console.log("One-More");
+    
+// })();
+
+
+//----------------------------------------------------------------------------------------------------
+
+
+//--------------------------  Classes -----------------------------------------------------
+
+
+
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+
+//         console.log("Hello " + this.name);
+//     }
+// }
+
+// const user1 = new User("Ram", 20);
+// const user2 = new User("Shyam", 22);
+
+
+
+
+//--------------------------------------------------------------------------------------------
+
+
+function hello(a){
+return function(b){
+if(b) return hello(a+b)
+    return a
+}}
+
+console.log(hello(1)(2)(3)(4)());
