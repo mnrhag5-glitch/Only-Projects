@@ -1285,10 +1285,134 @@
 //--------------------------------------------------------------------------------------------
 
 
-function hello(a){
-return function(b){
-if(b) return hello(a+b)
-    return a
-}}
+//-------------------------------------- Recursion QUESTION ------------------------------------------
 
-console.log(hello(1)(2)(3)(4)());
+
+
+// function print(n){
+//     if(n===0) return ; 
+
+//     console.log(n);
+//     print(n-1)
+    
+// }
+
+// print(5)
+
+
+
+
+// function print(n){
+//     if(n===0) return ; 
+
+//     print(n-1)
+//     console.log(n);
+    
+// }
+
+// print(5)
+
+
+
+
+
+
+// function sum(n) {
+//     if(n===0) return 0;
+//     return n + sum(n-1)
+// }
+
+// console.log(sum(5));
+
+
+
+
+// Output: 120
+
+// function factorial(n) {
+//   if(n===0) return 1;
+//   return n * factorial(n-1)
+// }
+
+// console.log(factorial(5));
+
+
+
+
+// Output: tpgtahc
+
+// function reverse(str) {
+//    if(str.length===0) return "";
+//    return reverse(str.slice(1)) + str[0]
+// }
+
+// console.log(reverse("chatgpt"));
+
+
+
+// Output: 25
+
+// function sumDigits(n) {
+//    if(n===0) return 0;
+//    return (n%10) + sumDigits(Math.floor(n/10))
+// }
+
+// console.log(sumDigits(799));
+
+
+
+// Output: 6
+
+// function countDigits(n) {
+
+//     if(n===0) return 0;
+//     return 1 + countDigits(Math.floor(n/10))
+// }
+
+// console.log(countDigits(123456));
+
+
+
+// Output: 81
+
+// function power(x, n) {
+//  if(n===0) return 1;
+//  return x * power(x,n-1)
+// }
+
+// console.log(power(3, 4));
+
+
+
+
+// // Output: 21
+
+// function fibonacci(n) {
+// if(n<=1) return n;
+// return fibonacci(n-1) + fibonacci(n-2)
+// }
+
+// console.log(fibonacci(8));
+
+
+//------------------------------------------------------------------------------------
+
+
+
+
+function num(n){
+    return function(o)
+    {
+        if(o) return num(n+o)
+            return n
+    }
+}
+console.log(num(1)(2)(3)(4)());
+
+
+// function hello(a){
+//      return function(b){
+//   if(b) return hello(a+b)
+//      return a}
+// }
+// console.log(hello(1)(5)(6)());
