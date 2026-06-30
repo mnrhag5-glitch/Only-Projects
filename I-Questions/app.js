@@ -1396,16 +1396,3 @@
 
 
 //------------------------------------------------------------------------------------
-let str = "ram"
-let str2 = "sita"
-let both = "";
-
-for(let i=0 ; i<=str.length || i<=str2.length; i++){
-    if(str[i]) 
-        both+=str[i]
-    
-    if(str2[i])
-        both+=str2[i]
-
-} 
-console.log(both);
