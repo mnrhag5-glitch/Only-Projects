@@ -1327,7 +1327,7 @@
 
 
 
-// Output: 120
+
 
 // function factorial(n) {
 //   if(n===0) return 1;
@@ -1396,23 +1396,16 @@
 
 
 //------------------------------------------------------------------------------------
+let str = "ram"
+let str2 = "sita"
+let both = "";
 
+for(let i=0 ; i<=str.length || i<=str2.length; i++){
+    if(str[i]) 
+        both+=str[i]
+    
+    if(str2[i])
+        both+=str2[i]
 
-
-
-function num(n){
-    return function(o)
-    {
-        if(o) return num(n+o)
-            return n
-    }
-}
-console.log(num(1)(2)(3)(4)());
-
-
-// function hello(a){
-//      return function(b){
-//   if(b) return hello(a+b)
-//      return a}
-// }
-// console.log(hello(1)(5)(6)());
+} 
+console.log(both);
