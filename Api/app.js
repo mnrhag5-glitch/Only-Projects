@@ -40,17 +40,17 @@
 
 
 
-async function test(){
-    let response = await fetch(
-        "https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=YOUR_API_KEY&units=metric"
-    );
+// async function test(){
+//     let response = await fetch(
+//         "https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=YOUR_API_KEY&units=metric"
+//     );
 
-    let data = await response.json();
+//     let data = await response.json();
 
-    console.log(data);
-}
+//     console.log(data);
+// }
 
-test();
+// test();
 
 
 
@@ -72,13 +72,6 @@ test();
 // .then(Response=>Response.json())
 // .then(data=>console.log(data));
 
-
-async function hello(){
-    let response = await fetch("https://jsonplaceholder.typicode.com/users");
-    let data = await response.json();
-    console.log(data);
-}
-hello();
 
 
 

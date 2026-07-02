@@ -166,12 +166,20 @@
 //   name.details();
 
 
+//============
 
-  let arr = [1,2,3];
-//   console.log(arr.prototype)
-  console.log(arr.__proto__)
+// function Student(name,roll){
+//   this.name = name;
+//   this.roll = roll;
+// }
+// Student.prototype.id = function(){
+//   console.log(this.name ,"Roll number is", this.roll);
+  
+// }
 
+// let student1 = new Student("ram" , 22)
+// let student2 = new Student("ramanujan" , 21)
 
-
-
+// student1.id()
+// student2.id()
 
