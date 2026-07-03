@@ -539,12 +539,12 @@
 
 
 
-let string = "Full-Stack-Development";
-let reverse = '';
-for(let i = string.length-1;i>=0;i--){
-     reverse+=string[i];
-}
-console.log(reverse);
+// let string = "Full-Stack-Development";
+// let reverse = '';
+// for(let i = string.length-1;i>=0;i--){
+//      reverse+=string[i];
+// }
+// console.log(reverse);
 
 
 
@@ -1396,4 +1396,470 @@ console.log(reverse);
 
 
 //------------------------------------------------------------------------------------
+
+
+
+
+
+//----------------------- last prectice for viva *******************************************
+//----------------------- last prectice for viva *******************************************
+//----------------------- last prectice for viva *******************************************
+//----------------------- last prectice for viva *******************************************
+//----------------------- last prectice for viva *******************************************
+//----------------------- last prectice for viva *******************************************
+//----------------------- last prectice for viva *******************************************
+
+
+
+
+
+//   let num = [12,2,5,54,23,43,4,64,65,44,65]
+//   let lar = num[0]
+//   for(let value of num){
+//     if( value > lar){
+//         lar = value
+//     }
+//   }
+//   console.log(lar);
+
+
+//   let num = [12,2,5,54,23,43,4,64,65,44,65]
+
+//   let largest = Math.max(...num)
+//   console.log(largest);
+  
+
+
+
+// let arr = [1,2,3,4,5,6,7,8,]
+//   let slar = arr[0]
+//   let lar = arr[0]
+//   for(let value of arr){
+//     if( value > lar){
+//         slar = lar
+//         lar = value
+//     }if(value > slar && lar !== value)
+//         slar = value
+//   }
+//   console.log(lar);
+//   console.log(slar);
+
+
+
+
+
+// let arr = [1,2,3,4,5]
+// let revers = arr.sort((a,b)=>{
+//     return b-a;
+// })
+// console.log(revers);
+
+
+
+// let reverse = []
+// for(let i = arr.length-1;i>=0;i--){
+//     reverse.push(arr[i])
+// }
+// console.log(reverse);
+
+
+
+
+// function a(){
+//     let name = "ram";
+//     function b()
+//     {
+//         console.log(name);
+        
+//     }return b
+// }
+// let aa = a()
+// aa()
+
+
+
+// function outer(){
+//     let count = 0;
+//     function inner(){
+//         count+=10;
+//         console.log(count);
+        
+//     } return inner
+// }
+// let value = outer()
+// value()
+// value()
+// value()
+
+
+
+
+// let arr = [1,2,3,2,4,3,5,6]
+// let remove = [...new Set(arr)]
+// console.log(remove);
+
+
+// let remove = arr.filter((value,index)=>{
+//     return (arr.indexOf (value) === index)
+// })
+// console.log(remove);
+
+
+
+// let str = "my name is gautam"
+// function rverse(str){
+//     if(str.length === 0) return "";
+//     return rverse(str.slice(1)) + str[0]
+// }
+// console.log(rverse(str));
+
+
+
+// let arr = "my name is gautam"
+// let lar = arr.split(" ").reduce((a,b)=>{
+//     return a.length > b.length ? a : b;
+// })
+// console.log(lar);
+
+
+
+
+// let str = "JavaScript is programing language"
+// let count = ""
+// for(let i = 0; i<str.length; i++){
+//     if("aeiouAEIOU".includes(str[i])){
+//         count++
+//     }
+// }
+// console.log(count);
+
+
+
+
+
+// let str = ["mango" , "grapes", " apple" , "litchi" , "banana"]
+// let largest = str.reduce((a,b)=>{
+//     return a.length > b.length ? a:b
+// })
+// console.log(largest);
+
+
+
+// let number = [1,2,3,4,5,6,7]
+// let odd = []
+// let even = []
+
+// for(let value of number){
+//     if(value%2==0){
+//         even += value
+//     }else{
+//         odd += value
+//     }
+// }
+// console.log(even);
+// console.log(odd);
+
+
+
+
+// let arr = [1,2,3,4,5,6]
+// let even = arr.filter((a)=>{
+//     return a%2==0
+// }).reduce((a,b)=>{
+//     return a+b
+// })
+
+//     console.log(even);
+    
+
+
+
+// let arr = [1,2,3,-4,-5,6,0]
+// let positvie = 0
+// let zero = 0
+// let negative = 0
+
+// for(let val of arr){
+//     if(val >= 0){
+//         positvie++
+//     }else if(val < 0){
+//         negative++
+//     }else{
+//         zero++
+//     }
+// }
+// console.log(positvie);
+// console.log(negative);
+// console.log(zero);
+
+
+
+
+
+
+
+// let arr = [1,2,3,4,5]
+
+// let smallest = arr[0]
+// for(let val of arr){
+//     if(val<smallest){
+//         smallest = val
+//     }
+// }
+// console.log(smallest);
+
+
+
+
+// let arr = [1,2,3,4,5,6]
+// let reverse = []
+// for(let i = arr.length-1; i>=0 ; i--){
+//     reverse.push(arr[i])
+// }
+// console.log(reverse);
+
+
+
+// let arr = [1,2,4,"hello" , "mango"]
+// let str = ''
+// let num = ''
+
+// for(let i = 0; i <arr.length; i++){
+//     if(typeof arr[i]==="string"){
+//         str += arr[i]
+//     }if(typeof arr[i] ===  "number"){
+//         num += arr[i]
+//     }
+// }
+// console.log(str);
+// console.log(num);
+
+
+
+// let obj = {
+//     name:"ram",
+//     age:22
+// }
+// function a(name){
+//     console.log("hello" + " " + this.name);
+//     console.log("hy" + " " + name);
+    
+// }
+// a.apply(obj,["ramesh"])
+
+
+// let str = "ram";
+// let str2 = "sita"      // rsaimta
+
+// let both = ''
+// for(let i = 0; i<str.length || i<str2.length; i++){
+//       if(str[i]) both+=str[i];
+//       if(str2[i]) both+=str2[i]
+// }
+// console.log(both);
+
+
+
+
+
+// class User{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+
+// User.prototype.hello = function(){
+//     console.log(this.name , "is" , this.age , "years old");
+    
+// }
+// let newuser = new User("ram", 22)
+// newuser.hello()
+
+
+
+
+// function fact(n){
+//     if(n===0) return 1;
+//     return n * fact(n-1)
+// }
+// console.log(fact (5));
+
+
+// function sum(n){
+//     if(n===0) return 0;
+//     return (n%10) + sum(Math.floor(n/10))
+// }
+// console.log(sum(12345));
+
+
+// function power(x,n){
+//     if(n===0) return 1;
+//     return x * power(x,n-1)
+// }
+// console.log(power(3,3));
+
+
+// function fibnobic(n){
+//     if(n<=1) return n;
+//     return fibnobic(n-1) + fibnobic (n-2)
+// }
+// console.log(fibnobic(10));
+
+
+
+// function palindrone(str){
+//     return str=== str.split("").reverse().join("")
+// }
+// console.log(palindrone("madam"));
+// console.log(palindrone("madak"));
+
+
+
+
+// let a = 10;
+// let b = 20;
+// let c = 30;
+// if(a>b&&a>b){
+//     console.log(a);
+    
+// }else if(b>a&&b>c){
+//     console.log(b);
+    
+// }else{console.log(c);
+// }
+
+
+
+// let a = 15;
+// if(a<0){
+//     console.log('negativ');
+    
+// }else{
+//     console.log("positive");
+    
+// }
+
+
+// let sumofEven = 0
+
+// for(let i = 1; i<=10 ; i++){
+//     if(i%2==0){
+//       sumofEven+=i
+//     }
+// }
+
+// console.log(sumofEven);
+
+
+
+// let num = 12345;
+// console.log(num.toString().length);
+
+
+
+// let pro = new Promise((res,rej)=>{
+//     let attendence = true;
+//     if(attendence){
+//         res("present")
+//     }else{rej("absent")}
+// })
+
+// pro.then((data)=>{console.log(data);
+// }).catch((error)=>{console.log("something wrong");
+// })
+
+
+
+
+
+// function task(time, message){
+
+//     return new Promise((resolve) => {
+
+//         setTimeout(() => {
+//             console.log(message);
+//             resolve();
+//         }, time);
+
+//     });
+
+// }
+
+// task(2000, "Step 1")
+// .then(() => {
+//     return task(4000, "Step 2");
+// })
+// .then(() => {
+//     return task(2000, "Step 3");
+// });
+
+
+
+
+
+
+
+
+
+// function task(time,msg){
+//     return new Promise((resolve)=>{
+//         setTimeout(()=>{
+//             console.log(msg);
+//             resolve()
+            
+//         },time)
+//     })
+// }
+// task(2000,"lets start")
+// .then(()=>{return task(4000 , "hy goodmorning")})
+// .then(()=>{return task(3000 , "hy afternoon")})
+// .then(()=>{return task(2000 , "hy evening")})
+
+
+
+
+// let str = "krishna"
+// let str2 = "radha"
+// let both = ""
+// for(let i = 0; i < str.length || i < str2.length ; i++){
+//     if(str[i]) both+=str[i]
+//     if(str2[i]) both+=str2[i]
+// }
+// console.log(both);
+
+
+
+
+// let arr = [10,20,30,"hello","hy"]
+// let str = []
+// let num = []
+// for(let value of arr){
+//     if(typeof value === "string"){
+//         str.push(value)
+//     }if( typeof value === "number"){
+//         num.push(value)
+//     }
+//     }
+
+// console.log(str);
+// console.log(num);
+
+
+// let arr = [1,[2,3],[4,5,[6,7]]]
+// console.log(arr.flat(Infinity));
+
+
+
+// let button = document.createElement("button")
+// button.innerText = "Change Background"
+// document.body.appendChild(button)
+
+// button.addEventListener("click",()=>{
+// document.body.style.backgroundColor = "pink"
+// })
+
+// button.addEventListener("dblclick",()=>{
+// document.body.style.backgroundColor = "orange"
+// })
 
