@@ -1,4 +1,4 @@
-let prompt = require('prompt-sync')();
+//let prompt = require('prompt-sync')();
 
 
 //partern programing 238************************
@@ -107,7 +107,7 @@ let prompt = require('prompt-sync')();
 
 // let x = 10;
 
-// let y = ++x + x++ + ++x;
+// let y = ++x + x++ + ++x;   // 11  + 11  + 13 = 35
 
 //---11+11+13=35
 
@@ -118,7 +118,9 @@ let prompt = require('prompt-sync')();
 // let a = 2;
 // let b = 3;
 
-// let c = a++ + b++ + ++a + ++b;
+// let c = a++ + b++ + ++a + ++b;     2 + 3 + 4 + 5 = 14
+
+
 
 //----------2+3+4+5=14
 
@@ -129,7 +131,8 @@ let prompt = require('prompt-sync')();
 
 // let a = 7;
 
-// let b = a++ + ++a + a++ + ++a;
+// let b = a++ + ++a + a++ + ++a;       7 + 9 + 9 + 11 = 36
+
 
 //-------7+9+9+11=36
 
@@ -140,7 +143,8 @@ let prompt = require('prompt-sync')();
 // let x = 3;
 // let y = 4;
 
-// let z = ++x + y++ + x++ + ++y + ++x;
+// let z = ++x + y++ + x++ + ++y + ++x;    
+
 
 //---------4+4+4+6+6=24
 
@@ -277,6 +281,19 @@ let prompt = require('prompt-sync')();
 
 // }
 
+
+
+// let n = 5;
+
+// for (let i = 1; i <= n; i++) {
+//   let str = "";
+
+//   for (let j = 1; j <= i; j++) {
+//     str += "*";
+//   }
+
+//   console.log(str);
+// }
 
 
 //-----------again ---------------------------
