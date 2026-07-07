@@ -1863,3 +1863,324 @@
 // document.body.style.backgroundColor = "orange"
 // })
 
+
+
+//--------------------------------- 7 - 7 - 2026 -viva -----------------------------------
+
+
+
+// let arr = [11,2,3,4,5,8]
+// // let largest = arr[0]
+// // let smallest = arr[0]
+// // for(let val of arr){
+// //     if (largest<val){
+// //         largest = val
+// //     }if(smallest>val){
+// //         smallest = val
+// //     }
+// // }
+
+// // console.log(largest);
+// // console.log(smallest);
+
+// let second = arr.sort((a,b)=>{
+//     return b-a;
+// })
+
+// console.log(second[1]);
+
+
+// let arr = [1,2,3,4,5]
+// let reverse = []
+// for(let i=arr.length-1;i>0;i--){
+//     reverse.push(arr[i])
+// }
+// console.log(reverse);
+
+
+
+// let arr = [1,2,3,4]
+
+// console.log(...arr);
+
+// function hello(...sum){
+
+//     console.log(sum);
+    
+// }
+// hello(1,2,3)
+
+// function outer(){
+//     let count = 1;
+//     function inner(){
+//         count++;
+//         console.log(count);
+        
+//     }
+//     return inner
+// }
+// let add = outer()
+// add()
+// add()
+// add()
+// add()
+// add()
+// add()
+// add()
+
+
+
+
+// let arr = [1,2,3,4,5,6,3,2,1,5,6,7,8,9]
+// let remove = [...new Set(arr)]
+// console.log(remove);
+
+// let rem = arr.filter((a,b)=>{
+//     return arr.indexOf (a) == b
+// })
+// console.log(rem);
+
+
+
+
+// function reverse(str){
+//     if(str.length===0)return "";
+//     return reverse(str.slice(1)) + str[0]
+// }
+// console.log(reverse("ram"));
+
+
+// let str = "helllo my name is  gautam"
+// // let rev = []
+// // for(let i = str.length-1; i>=0;i--){
+// //     rev+=str[i]
+// // }
+// // console.log(rev);
+
+// let rev = str.split("").reduce((a,b)=>{
+//     return b+a;
+// },"")
+// console.log(rev);
+
+
+
+
+// let str = "my name is gautam"
+// let largest = str.split(" ").reduce((a,b)=>{
+//     return a.length > b.length ? a:b
+// })
+// console.log(largest);
+
+
+
+// let str = [1,2,3,4,5,6,7,8]
+
+// let even = str.filter((a)=>{
+//     return a%2==0
+
+// })
+// let odd = str.filter((a)=>{
+//     return a%2!==0
+// })
+// let sum = even.reduce((a,b)=>{
+//     return a+b;
+// })
+
+// console.log(even);
+// console.log(odd);
+// console.log(sum);
+
+
+// let arr = [1,2,5,2,3,-1,-2,-3,-4]
+// let positive = 0
+// let nagetive = 0
+
+// for(let val of arr){
+//     if(val > 0){
+//         positive++;
+//     }else{
+//         nagetive++
+//     }
+// }
+// console.log(positive);
+// console.log(nagetive);
+
+
+
+// let arr = [11,2,3,4]
+
+// let min = arr[0]
+// for(let val of arr){
+//     if(val<min)
+//         min = val
+// }
+// console.log(min);
+
+
+// let arr = [1,2,3,4,"a","b","c","d"]
+// let string = arr.filter((a)=>{
+//     return typeof a == "string"
+// })
+// let number = arr.filter((a)=>{
+//     return typeof a == "number"
+// })
+// console.log(string);
+// console.log(number);
+
+
+// let obj = {
+//     name:"ram",
+//     age:22
+// }
+// function hello(name,age){
+//     console.log("hello" + " " + this.name);
+//     console.log(name,age);
+    
+    
+// }
+// hello.apply(obj,["aman",55])
+
+// class hello{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+// }
+// let p1 = new hello("rohan", 25)
+// console.log(p1);
+
+
+// function print(n){
+//     if(n===0) return 0;
+//     console.log(n);
+//     print(n-1)
+    
+// }
+// print(10)
+
+// function sum(n){
+//     if(n===0) return 0;
+//     return n + sum(n-1)
+// }
+// console.log(sum(5));
+
+
+
+// function fact (n){
+//     if(n===0) return 1;
+//     return n * fact (n-1)
+// }
+// console.log(fact(5));
+
+
+// function reverse(str){
+//     if(str.length === 0) return "";
+//     return reverse (str.slice(1)) + str[0]
+// }
+// console.log(reverse("gautam"));
+
+
+// function sum(n){
+//     if(n===0) return 0;
+//     return (n%10) + sum(Math.floor(n/10))
+// }
+// console.log(sum(1234));
+
+// function power(x,n){
+//     if(n===0) return 1;
+//     return x * power(x,n-1)
+// }
+// console.log(power(3,3));
+
+// function feb(n){
+//     if(n<=1) return n;
+//     return feb(n-1) + feb(n-2)
+// }
+// console.log(feb(10));
+
+
+
+// function palindrome(str){
+//     return str === str.split("").reverse().join("")
+// }
+// console.log(palindrome("madam"));
+// console.log(palindrome("madamaa"));
+
+
+
+
+// let num = 123456;
+// numm = num.toString()
+// console.log(numm.length);
+
+// function hello(msg,time){
+//     return new Promise((res)=>{
+//         setTimeout(()=>{
+//             console.log(msg);
+//             res()
+//         },time)
+//     })
+// }
+// hello("hiiii",2000)
+// .then(()=>{return hello("namste",3000)})
+// .then(()=>{return hello("namste jii" , 4000)})
+// .then(()=>{return hello("namste kese ho" , 2000)})
+// .then(()=>{return hello("namste kya haal hai" , 1000)})
+
+
+// let n = 5;
+
+// for (let i = n; i >= 1; i--) {
+//   let str = "";
+
+//   for (let j = 1; j <= i; j++) {
+//     str += "*";
+//   }
+
+//   console.log(str);
+// }
+
+
+
+// let n = 10;
+
+// for (let i = 1; i <= n; i++) {
+//   let str = "";
+
+//   for (let j = 1; j <= i; j++) {
+//     str += "*";
+//   }
+
+//   console.log(str);
+// }
+
+
+
+// let n = 5;
+
+// for (let i = 1; i <= n; i++) {
+//   let str = "";
+
+//   // spaces
+//   for (let j = 1; j <= n - i; j++) {
+//     str += " ";
+//   }
+
+//   // stars
+//   for (let j = 1; j <= 2 * i - 1; j++) {
+//     str += "^";
+//   }
+
+//   console.log(str);
+// }
+
+
+function sum(a,b){
+ console.log(a+b);
+ 
+}
+function add(a,b,callback){
+           callback (a+b)
+           
+}
+sum(2,3,add)
