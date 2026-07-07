@@ -1,62 +1,109 @@
 // ------------------------------ Create Linked list  ------------------------------------
 
+// class node{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+
+// }
+// let new1 = new node(10)
+// let new2 = new node(20)
+// let new3 = new node(20)
+
+
+// new1.next = new2;
+// new2.next = new3
+
+// console.log(new3);
 
 
 //---------------------------------------------- add from starting ---------------------
 
 
-// // Node class
-class Node {
-    constructor(data) {
-        this.data = data;   // Value store hogi
-        this.next = null;   // Agle node ka reference
-    }
-}
-// Linked List class
-class LinkedList {
-    constructor() {
-        this.head = null;   // Shuru me list empty hai
-    }
+// // // Node class
+// class Node {
+//     constructor(data) {
+//         this.data = data;   // Value store hogi
+//         this.next = null;   // Agle node ka reference
+//     }
+// }
+// // Linked List class
+// class LinkedList {
+//     constructor() {
+//         this.head = null;   // Shuru me list empty hai
+//     }
 
-    // Beginning me node insert karna
-    insertAtBeginning(data) {
-        // Naya node banao
-        let newNode = new Node(data);
-        // New node ko purane head se connect karo
-        newNode.next = this.head;
-        // Head ko update kar do
-        this.head = newNode;
-    }
-    // Linked List print karna
-    print() {
-        let current = this.head;
-        while (current !== null) {
-            console.log(current.data);
-            current = current.next;
-        }
-    }
-}
+//     // Beginning me node insert karna
+//     insertAtBeginning(data) {
+//         // Naya node banao
+//         let newNode = new Node(data);
+//         // New node ko purane head se connect karo
+//         newNode.next = this.head;
+//         // Head ko update kar do
+//         this.head = newNode;
+//     }
+//     // Linked List print karna
+//     print() {
+//         let current = this.head;
+//         while (current !== null) {
+//             console.log(current.data);
+//             current = current.next;
+//         }
+//     }
+// }
 
-// Object banao
-let list = new LinkedList();
+// // Object banao
+// let list = new LinkedList();
 
-// Insert karo
-list.insertAtBeginning(30);
-list.insertAtBeginning(20);
-list.insertAtBeginning(10);
-list.insertAtBeginning(5);
-list.insertAtBeginning(1);
+// // Insert karo
+// list.insertAtBeginning(30);
+// list.insertAtBeginning(20);
+// list.insertAtBeginning(10);
+// list.insertAtBeginning(5);
+// list.insertAtBeginning(1);
 
-// Print
-list.print();
-
-
+// // Print
+// list.print();
 
 
 
 
+//--------------------- ese bhi kr skte ho--------------------------------
 
 
+
+
+// class node{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// class linkedList{
+//     constructor(){
+//         this.head = null
+//     }
+// addFirst (data){
+//     let newNode = new node(data)
+//     newNode.next = this.head;
+//     this.head = newNode;
+// }
+// print(){
+//     let temp = this.head;
+//     while(temp){
+//         console.log(temp.data);
+//         temp = temp.next
+//     }}}
+// let list = new linkedList()
+// list.addFirst(1)
+// list.addFirst(2)
+// list.addFirst(3)
+// list.addFirst(4)
+// list.addFirst(5)
+// list.addFirst(5)
+
+// list.print()
 
 
 
@@ -68,6 +115,7 @@ list.print();
 
 // class Node {
 //     constructor(data){
+    
 //         this.data = data;
 //         this.next = null;
 //     }
@@ -120,8 +168,45 @@ list.print();
 
 
 
+// class node{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// class linkedList{
+//     constructor(){
+//         this.head = null;
+//     }
+
+//     addFromEnd(data){
+//         let newNode = new node(data)
+//         if(this.head===null){
+//             this.head = newNode
+//         return 
+//         }
+//     let current = this.head;
+//     while(current.next!==null){
+//       current = current.next;
+//     }
+//     current.next = newNode}
+// print(){
+//     let current = this.head
+//     while(current!==null){
+//        console.log(current.data);
+//        current = current.next
+       
+//     }
+// }
+// }
 
 
+// let list = new linkedList()
+// list.addFromEnd(1)
+// list.addFromEnd(2)
+// list.addFromEnd(3)
+
+// list.print()
 
 
 

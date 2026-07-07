@@ -997,15 +997,378 @@
 
 
 //--------------------------------- each ka character count kro ----------------------------------
-let str = "full stack developmenet";
-let count = {};
 
-for (let value of str) {
-    if (count[value]) {
-        count[value]++;
-    } else {
-        count[value] = 1;
-    }
-}
 
-console.log(count);
+
+
+// let str = "full stack developmenet";
+// let count = {};
+
+// for (let value of str) {
+//     if (count[value]) {
+//         count[value]++;
+//     } else {
+//         count[value] = 1;
+//     }
+// }
+
+// console.log(count);
+
+
+
+
+//--------------------------------------------------------------------------------------------------
+
+///////---------------------------------- find the interrsection ----------------------------------------
+
+// let arr = [1,2,3,4,5]
+// let arr2 = [3,4,5,6,7,8,]
+
+// let intersection = arr.filter((a)=>{
+//     return arr2.includes(a)
+// })
+// console.log(intersection);
+
+
+//--------------------------------------------------------------------------------------------------------------
+
+
+//-------------------------------------  duplicate find kr-------------------------------------------------------------------------
+
+
+// let arr = [1,2,3,4,5,6,3,4]
+
+// let duplicate = arr.filter((a,b)=>{
+//     return arr.indexOf(a)!==b
+// })
+// console.log(duplicate);
+
+
+// ------------------------------ Linked List ADD from starting ----------------------------
+
+
+
+
+// class Node{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+
+// class linkedList{
+//     constructor(){
+//         this.head = null;
+//     }
+     
+//     addStarting(data){
+//         let newNode = new Node(data)
+//         newNode.next = this.head;
+//         this.head = newNode;
+//     }
+
+
+//     list(){
+//         let current = this.head;
+//         while  (current !== null ){
+//             console.log(current.data);
+//             current = current.next
+            
+// }}}
+
+
+// let newList = new linkedList()
+// newList.addStarting(10)
+// newList.addStarting(11)
+// newList.addStarting(12)
+// newList.addStarting(13)
+// newList.addStarting(14)
+// newList.addStarting(15)
+
+// newList.list()
+
+
+
+
+
+
+
+
+
+
+//----------------------------------------------  add from last ----------------------------------
+
+
+
+
+
+// class Node {
+//     constructor(data) {
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+
+// class LinkedList {
+//     constructor() {
+//         this.head = null;
+//     }
+
+//     addLast(data) {
+//         let newNode = new Node(data);
+
+//         // Agar list empty hai
+//         if (this.head === null) {
+//             this.head = newNode;
+//             return;
+//         }
+
+//         // Last node tak jao
+//         let current = this.head;
+
+//         while (current.next !== null) {
+//             current = current.next;
+//         }
+
+//         // Last node ko new node se connect karo
+//         current.next = newNode;
+//     }
+
+//     list() {
+//         let current = this.head;
+
+//         while (current !== null) {
+//             console.log(current.data);
+//             current = current.next;
+//         }
+//     }
+// }
+
+// let newList = new LinkedList();
+
+// newList.addLast(10);
+// newList.addLast(11);
+// newList.addLast(12);
+// newList.addLast(13);
+// newList.addLast(14);
+// newList.addLast(15);
+
+// newList.list();
+
+
+
+
+
+
+
+
+//----------------------------------------- Check every count of element ---------------------------
+
+
+// let str = "gautam"
+// let count = {}
+// for(let value of str){
+//     if(count[value]){
+//         count[value]++
+//     }else{
+//         count[value] = 1
+//     }
+// }
+// console.log(count);
+
+
+
+
+// --------------------------------------------------------------------------------------------
+
+
+
+
+// class node{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
+// class linkedList{
+//     constructor(){
+//         this.head = null
+//     }
+// addFirst (data){
+//     let newNode = new node(data)
+//     newNode.next = this.head;
+//     this.head = newNode;
+// }
+// print(){
+//     let temp = this.head;
+//     while(temp){
+//         console.log(temp.data);
+//         temp = temp.next
+//     }}}
+// let list = new linkedList()
+// list.addFirst(1)
+// list.addFirst(2)
+// list.addFirst(3)
+// list.addFirst(4)
+// list.addFirst(5)
+// list.addFirst(5)
+
+// list.print()
+
+
+
+
+
+
+//  class Node{
+//     constructor(data){
+//         this.data = data;
+//         this.next = null;
+//     }
+//  }
+//  class linkedList{
+//     constructor(){
+//         this.head = null
+//     }
+
+//         addFromEnd(data){
+//             let newNOde = new Node(data)
+//             if(!this.head){
+//                 this.head = newNOde;
+//                 return;
+//             }
+//             let temp = this.head;
+//             while(temp.next){
+//                 temp = temp.next;
+//             }
+//             temp.next = newNOde
+//         }
+//         print(){
+//             let temp = this.head;
+//             while(temp){
+//                 console.log(temp.data);
+//                 temp = temp.next
+                
+//             }
+//         }
+//  }
+
+// let list = new linkedList();
+
+// list.addFromEnd(1);
+// list.addFromEnd(2);
+// list.addFromEnd(3);
+// list.addFromEnd(4);
+// list.addFromEnd(5);
+
+// list.print();
+
+
+
+//--------------------------------------- Find element greater then 40-------------------
+
+// // let arr = [10,15,30,75,40,61,23]
+// let ans = arr.filter((a)=>{
+//     return a>40
+// })
+// console.log(ans);
+
+
+//--------------------------------------------- saperate -----------------------------------
+
+// let arr = [10,15,30,"c","d",75,40,"q",61,23]
+// // let string = []
+// // let numbers = []
+// // for(let value of arr){
+// //     if(typeof value == "string"){
+// //         string.push(value)
+// //     }else if(typeof value == "number"){
+// //         numbers.push(value)
+// //     }
+// // }
+// // console.log(string);
+// // console.log(numbers);
+
+// ///---------------- with filter***********
+// let str = arr.filter((a)=>{
+//     return typeof a == "string"
+// })
+// let num = arr.filter((b)=>{
+//     return typeof b =="number"
+// })
+// console.log(str);
+// console.log(num);
+
+
+//---------------------------------------- reduce method ------------------------------------
+
+// let arr = [1,2,3,4]
+// let sum = arr.reduce((a,b)=>{
+//     return a+b
+// },0)
+// console.log(sum);
+
+
+
+//---------------------------------------------------------------------------------------------
+
+//--------------------------------- CallBack Function -----------------------------------------
+
+// function add(a,b){
+// console.log(a+b);
+
+// }
+// function calculate(a,b,callback){
+//     callback(a,b)
+// }
+// calculate(5,5,add)
+
+
+//---------------------------------------------------------------------------------------------------
+
+//---------------------------------------------- Promise ---------------------------------------------------
+
+// function hello(msg,time){
+//     return new Promise((res)=>{
+//         setTimeout(()=>{
+//             console.log(msg);
+            
+//             res()
+            
+//         },time)
+//     })
+// }
+// hello("kkkkkkk",2000)
+// .then(()=>  {return hello("hiii" , 3000);
+// }).then(()=>{return hello("yooo" , 2000);
+// }).then(()=>{return hello("uiiiiii" , 4000);
+// }).then(()=>{return hello("ululululu" , 2000);
+// })
+
+
+
+//------------------------------------------------------------------------------------------------
+
+
+// let arr = [10,8,"c",11,"q",5]
+// // let str = []
+// // let num = []
+
+// // for(let val of arr){
+// //     if(typeof val == "number"){
+// //         num.push(val)
+// //     }if(typeof val == "string"){
+// //         str.push(val)
+// //     }
+// // }
+// // console.log(str);
+// // console.log(num);
+
+// let str = arr.filter((a)=>{
+//     return typeof a =="string"
+// })
+// let num = arr.filter((a)=>{
+//     return typeof a =="number"
+// })
+// console.log(num);
+// console.log(str);
