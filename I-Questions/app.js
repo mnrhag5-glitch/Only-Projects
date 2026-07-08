@@ -2175,12 +2175,12 @@
 // }
 
 
-function sum(a,b){
- console.log(a+b);
+// function sum(a,b){
+//  console.log(a+b);
  
-}
-function add(a,b,callback){
-           callback (a+b)
+// }
+// function add(a,b,callback){
+//            callback (a+b)
            
-}
-sum(2,3,add)
+// }
+// sum(2,3,add)
